@@ -81,9 +81,17 @@ const App = () => {
         course_interest: ''
       });
     } catch (error) {
+      let errorMessage = 'Failed to submit enrollment. Please try again.';
+      if (error.response?.data?.detail) {
+        if (Array.isArray(error.response.data.detail)) {
+          errorMessage = error.response.data.detail.map(err => err.msg).join(', ');
+        } else if (typeof error.response.data.detail === 'string') {
+          errorMessage = error.response.data.detail;
+        }
+      }
       setSubmitStatus({
         type: 'error',
-        message: error.response?.data?.detail || 'Failed to submit enrollment. Please try again.'
+        message: errorMessage
       });
     } finally {
       setIsSubmitting(false);
