@@ -367,8 +367,298 @@ const App = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Course Details Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Course Details</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Comprehensive 6-month SDET program designed to transform your career in software testing
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Clock className="h-8 w-8 text-blue-400 mr-4" />
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">Duration</h3>
+                      <p className="text-blue-400 text-xl font-semibold">6 Months</p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-blue-500 pl-4">
+                      <h4 className="text-white font-semibold mb-2">Weekdays Schedule</h4>
+                      <p className="text-gray-300">Tuesday | Wednesday | Thursday</p>
+                      <p className="text-blue-400 font-semibold">7:00 PM to 9:00 PM CST</p>
+                    </div>
+                    
+                    <div className="border-l-4 border-purple-500 pl-4">
+                      <h4 className="text-white font-semibold mb-2">Weekend Schedule</h4>
+                      <p className="text-gray-300">Saturday | Sunday</p>
+                      <p className="text-purple-400 font-semibold">9:00 AM to 12:00 PM CST</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-6">
+                    <Target className="h-8 w-8 text-green-400 mr-4" />
+                    <div>
+                      <h3 className="text-2xl font-bold text-white">Entry Level</h3>
+                      <p className="text-green-400 text-xl font-semibold">No IT Background Required</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-300">Perfect for beginners and career changers looking to enter the SDET field</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="space-y-6">
+              <div className="grid sm:grid-cols-2 gap-6">
+                <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
+                  <div className="flex items-center mb-3">
+                    <PlayCircle className="h-6 w-6 text-blue-400 mr-3" />
+                    <h4 className="text-white font-semibold">Online Classes</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Attend from Anywhere!</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20">
+                  <div className="flex items-center mb-3">
+                    <BookOpen className="h-6 w-6 text-purple-400 mr-3" />
+                    <h4 className="text-white font-semibold">Class Recordings</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Access to the Recording of the Classes</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-6 border border-green-500/20">
+                  <div className="flex items-center mb-3">
+                    <CheckCircle className="h-6 w-6 text-green-400 mr-3" />
+                    <h4 className="text-white font-semibold">Homework</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Plenty of Examples for Homework</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-xl p-6 border border-yellow-500/20">
+                  <div className="flex items-center mb-3">
+                    <Star className="h-6 w-6 text-yellow-400 mr-3" />
+                    <h4 className="text-white font-semibold">Assessments</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Bi Weekly Quizzes and Exams</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-red-500/20">
+                  <div className="flex items-center mb-3">
+                    <Users className="h-6 w-6 text-red-400 mr-3" />
+                    <h4 className="text-white font-semibold">Mentorship</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Weekly 1 to 1 Mentorship</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-indigo-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-6 border border-indigo-500/20">
+                  <div className="flex items-center mb-3">
+                    <Code className="h-6 w-6 text-indigo-400 mr-3" />
+                    <h4 className="text-white font-semibold">Real Projects</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Real Time Mock Project Experience</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-teal-500/20 to-green-500/20 backdrop-blur-sm rounded-xl p-6 border border-teal-500/20">
+                  <div className="flex items-center mb-3">
+                    <Trophy className="h-6 w-6 text-teal-400 mr-3" />
+                    <h4 className="text-white font-semibold">Rewards</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Lots of Rewards to Motivate Students on Exams</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-6 border border-orange-500/20">
+                  <div className="flex items-center mb-3">
+                    <Target className="h-6 w-6 text-orange-400 mr-3" />
+                    <h4 className="text-white font-semibold">Interview Prep</h4>
+                  </div>
+                  <p className="text-gray-300 text-sm">Interview Preparation Sessions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Course Curriculum Section */}
+      <section className="py-24 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Course Curriculum</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Master the essential technologies and tools used by SDET professionals worldwide
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {[
+              { name: 'Java', icon: '☕', color: 'from-orange-500 to-red-500' },
+              { name: 'Selenium', icon: '🌐', color: 'from-green-500 to-blue-500' },
+              { name: 'Cucumber', icon: '🥒', color: 'from-green-400 to-green-600' },
+              { name: 'Object Oriented Programming', icon: '🧩', color: 'from-purple-500 to-pink-500' },
+              { name: 'TestNG', icon: '🧪', color: 'from-blue-500 to-purple-500' },
+              { name: 'Framework Development', icon: '🏗️', color: 'from-indigo-500 to-blue-500' },
+              { name: 'Agile Methodology', icon: '⚡', color: 'from-yellow-500 to-orange-500' },
+              { name: 'Mock Project', icon: '🚀', color: 'from-red-500 to-pink-500' },
+              { name: 'Interview Prep', icon: '💼', color: 'from-teal-500 to-green-500' },
+              { name: 'Maven', icon: '📦', color: 'from-brown-500 to-orange-500' },
+              { name: 'GitHub', icon: '🐙', color: 'from-gray-700 to-gray-900' },
+              { name: 'Jenkins', icon: '⚙️', color: 'from-blue-600 to-indigo-600' },
+              { name: 'MySQL', icon: '🗄️', color: 'from-blue-500 to-blue-700' },
+              { name: 'Postman', icon: '📮', color: 'from-orange-500 to-red-500' },
+              { name: 'Rest Assured', icon: '🔒', color: 'from-green-500 to-teal-500' }
+            ].map((tech, index) => (
+              <Card key={index} className="bg-slate-800/50 border-slate-600 hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+                <CardContent className="p-6 text-center">
+                  <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${tech.color} flex items-center justify-center text-2xl mb-4 mx-auto`}>
+                    {tech.icon}
+                  </div>
+                  <h3 className="text-white font-semibold text-lg">{tech.name}</h3>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">Pricing Plans</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Choose the perfect plan that fits your learning journey and career goals
+            </p>
+            <div className="flex justify-center mt-8">
+              <div className="bg-slate-800/50 rounded-full p-1 border border-slate-600">
+                <div className="flex items-center">
+                  <span className="px-4 py-2 text-gray-300">Monthly</span>
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-3 mx-2">
+                    <div className="w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <span className="px-4 py-2 text-white font-semibold">Pay All in One</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Career Consultation */}
+            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative">
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-white mb-2">Career Consultation</h3>
+                  <div className="text-4xl font-bold text-orange-500 mb-2">Free</div>
+                  <p className="text-gray-300">15min Zoom Session</p>
+                </div>
+
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 mb-6">
+                  Book A Slot
+                </Button>
+
+                <div className="space-y-4">
+                  <p className="text-gray-300 mb-4">Get personalized career advice from our team on</p>
+                  {[
+                    'Career Selection',
+                    'Questions',
+                    'Roadblocks',
+                    'Market Research',
+                    'Resume Writing'
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                      <span className="text-gray-300">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* SDET Bootcamp - Featured */}
+            <Card className="bg-gradient-to-br from-orange-100/10 to-orange-200/10 border-orange-500/50 backdrop-blur-sm relative transform scale-105">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 text-sm">
+                  MOST POPULAR
+                </Badge>
+              </div>
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-3xl font-bold text-white mb-4">SDET Bootcamp</h3>
+                  <div className="text-5xl font-bold text-white mb-2">Check Price</div>
+                  <p className="text-gray-300">One Time Payment</p>
+                </div>
+
+                <Button className="w-full bg-white text-orange-500 hover:bg-gray-100 font-semibold py-3 mb-6">
+                  Get a Quote Now
+                </Button>
+
+                <div className="space-y-4">
+                  <p className="text-white font-semibold mb-4">All-inclusive package</p>
+                  {[
+                    'Live Sessions',
+                    'Interview Preparation',
+                    'Resume Writing',
+                    'Mock Interviews',
+                    '1-1 Mentorship'
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                      <span className="text-gray-300">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Support Session */}
+            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative">
+              <CardContent className="p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-white mb-2">Support Session</h3>
+                  <div className="text-4xl font-bold text-orange-500 mb-2">Get Price</div>
+                </div>
+
+                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 mb-6">
+                  Book A Slot
+                </Button>
+
+                <div className="space-y-4">
+                  <p className="text-gray-300 mb-4">Support Session On</p>
+                  {[
+                    'Assistance in Job',
+                    'Assistance in Interview',
+                    'Job Search Strategies and Tips',
+                    'Mentorship',
+                    'Mock Interviews'
+                  ].map((feature, index) => (
+                    <div key={index} className="flex items-center">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                      <span className="text-gray-300">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-gray-400">All plans include 24/7 support and lifetime access to course materials</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Success Stories</h2>
