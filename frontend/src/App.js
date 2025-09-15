@@ -323,7 +323,7 @@ const App = () => {
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold text-white mb-2">Program Duration</h3>
-                    <p className="text-blue-400 text-2xl font-bold">6 Months Intensive Training</p>
+                    <p className="text-blue-400 text-2xl font-bold">8 Weeks Intensive Training</p>
                   </div>
                 </div>
                 
