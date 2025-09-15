@@ -779,16 +779,14 @@ const App = () => {
                       </div>
                       <div>
                         <Label htmlFor="course" className="text-white">Course Interest *</Label>
-                        <Select value={enrollmentForm.course_interest} onValueChange={(value) => handleInputChange(enrollmentForm, setEnrollmentForm)('course_interest')(value)}>
-                          <SelectTrigger className="bg-slate-700 border-slate-600 text-white">
-                            <SelectValue placeholder="Select a course" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-slate-800 border-slate-600">
-                            {courses.map((course) => (
-                              <SelectItem key={course.id} value={course.title}>{course.title}</SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
+                        <Input
+                          id="course"
+                          value="SDET Bootcamp"
+                          readOnly
+                          className="bg-slate-700 border-slate-600 text-white cursor-not-allowed"
+                          placeholder="SDET Bootcamp"
+                        />
+                        <input type="hidden" name="course_interest" value="SDET Bootcamp" />
                       </div>
                     </div>
 
