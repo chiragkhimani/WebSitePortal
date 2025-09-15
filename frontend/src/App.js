@@ -309,7 +309,7 @@ const App = () => {
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Course Details</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Comprehensive 6-month SDET program designed to transform your career in software testing
+              Comprehensive 8-week intensive SDET program designed to transform your career in software testing
             </p>
           </div>
 
