@@ -483,17 +483,34 @@ const App = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Pricing Plans</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
               Choose the perfect plan that fits your learning journey and career goals
             </p>
-            <div className="flex justify-center mt-8">
-              <div className="bg-slate-800/50 rounded-full p-1 border border-slate-600">
+            
+            {/* Pricing Toggle */}
+            <div className="flex justify-center">
+              <div className="bg-slate-800/50 rounded-full p-1 border border-slate-600 backdrop-blur-sm">
                 <div className="flex items-center">
-                  <span className="px-4 py-2 text-gray-300">Monthly</span>
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-3 mx-2">
-                    <div className="w-6 h-6 bg-white rounded-full"></div>
-                  </div>
-                  <span className="px-4 py-2 text-white font-semibold">Pay All in One</span>
+                  <button
+                    onClick={() => setPricingMode('monthly')}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                      pricingMode === 'monthly' 
+                        ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
+                        : 'text-gray-300 hover:text-white'
+                    }`}
+                  >
+                    Monthly
+                  </button>
+                  <button
+                    onClick={() => setPricingMode('onetime')}
+                    className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+                      pricingMode === 'onetime' 
+                        ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg' 
+                        : 'text-gray-300 hover:text-white'
+                    }`}
+                  >
+                    Pay All in One
+                  </button>
                 </div>
               </div>
             </div>
@@ -501,15 +518,15 @@ const App = () => {
 
           <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Career Consultation */}
-            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative">
+            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative hover:transform hover:scale-105 transition-all duration-300">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Career Consultation</h3>
-                  <div className="text-4xl font-bold text-orange-500 mb-2">Free</div>
+                  <div className="text-4xl font-bold text-blue-400 mb-2">Free</div>
                   <p className="text-gray-300">15min Zoom Session</p>
                 </div>
 
-                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 mb-6">
+                <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-semibold py-3 mb-6">
                   Book A Slot
                 </Button>
 
@@ -523,7 +540,7 @@ const App = () => {
                     'Resume Writing'
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                      <CheckCircle className="w-5 h-5 text-blue-400 mr-3 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
@@ -532,20 +549,28 @@ const App = () => {
             </Card>
 
             {/* SDET Bootcamp - Featured */}
-            <Card className="bg-gradient-to-br from-orange-100/10 to-orange-200/10 border-orange-500/50 backdrop-blur-sm relative transform scale-105">
+            <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/50 backdrop-blur-sm relative transform scale-105 hover:scale-110 transition-all duration-300">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 text-sm">
+                <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-sm font-bold">
                   MOST POPULAR
                 </Badge>
               </div>
-              <CardContent className="p-8">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-lg"></div>
+              <CardContent className="p-8 relative z-10">
                 <div className="text-center mb-8">
                   <h3 className="text-3xl font-bold text-white mb-4">SDET Bootcamp</h3>
-                  <div className="text-5xl font-bold text-white mb-2">Check Price</div>
-                  <p className="text-gray-300">One Time Payment</p>
+                  <div className="text-5xl font-bold text-white mb-2">
+                    {pricingMode === 'monthly' ? '$1,000' : '$5,000'}
+                  </div>
+                  <p className="text-gray-300">
+                    {pricingMode === 'monthly' ? 'Per Month × 6 Months' : 'One Time Payment'}
+                  </p>
+                  {pricingMode === 'monthly' && (
+                    <p className="text-blue-400 text-sm mt-2">Total: $6,000</p>
+                  )}
                 </div>
 
-                <Button className="w-full bg-white text-orange-500 hover:bg-gray-100 font-semibold py-3 mb-6">
+                <Button className="w-full bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
                   Get a Quote Now
                 </Button>
 
@@ -559,7 +584,7 @@ const App = () => {
                     '1-1 Mentorship'
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-400 mr-3" />
+                      <CheckCircle className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
@@ -568,14 +593,15 @@ const App = () => {
             </Card>
 
             {/* Support Session */}
-            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative">
+            <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm relative hover:transform hover:scale-105 transition-all duration-300">
               <CardContent className="p-8">
                 <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-2">Support Session</h3>
-                  <div className="text-4xl font-bold text-orange-500 mb-2">Get Price</div>
+                  <div className="text-4xl font-bold text-purple-400 mb-2">Get Price</div>
+                  <p className="text-gray-300">Customized Support</p>
                 </div>
 
-                <Button className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 mb-6">
+                <Button className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-3 mb-6">
                   Book A Slot
                 </Button>
 
@@ -589,7 +615,7 @@ const App = () => {
                     'Mock Interviews'
                   ].map((feature, index) => (
                     <div key={index} className="flex items-center">
-                      <div className="w-2 h-2 bg-orange-500 rounded-full mr-3"></div>
+                      <Target className="w-5 h-5 text-purple-400 mr-3 flex-shrink-0" />
                       <span className="text-gray-300">{feature}</span>
                     </div>
                   ))}
@@ -599,7 +625,12 @@ const App = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-400">All plans include 24/7 support and lifetime access to course materials</p>
+            <p className="text-gray-400 mb-4">All plans include 24/7 support and lifetime access to course materials</p>
+            <div className="flex justify-center space-x-6 text-sm text-gray-500">
+              <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Money Back Guarantee</span>
+              <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Flexible Payment Options</span>
+              <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Career Support</span>
+            </div>
           </div>
         </div>
       </section>
