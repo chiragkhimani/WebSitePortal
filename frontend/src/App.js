@@ -79,7 +79,7 @@ const App = () => {
         country: '',
         phone_number: '',
         experience_level: '',
-        course_interest: ''
+        course_interest: 'SDET Bootcamp'
       });
     } catch (error) {
       let errorMessage = 'Failed to submit enrollment. Please try again.';
