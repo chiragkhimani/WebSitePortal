@@ -400,38 +400,79 @@ const App = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Course Curriculum</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
               Master the essential technologies and tools used by SDET professionals worldwide
             </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
-              { name: 'Java', icon: '☕', color: 'from-orange-500 to-red-500' },
-              { name: 'Selenium', icon: '🌐', color: 'from-green-500 to-blue-500' },
-              { name: 'Cucumber', icon: '🥒', color: 'from-green-400 to-green-600' },
-              { name: 'Object Oriented Programming', icon: '🧩', color: 'from-purple-500 to-pink-500' },
-              { name: 'TestNG', icon: '🧪', color: 'from-blue-500 to-purple-500' },
-              { name: 'Framework Development', icon: '🏗️', color: 'from-indigo-500 to-blue-500' },
-              { name: 'Agile Methodology', icon: '⚡', color: 'from-yellow-500 to-orange-500' },
-              { name: 'Mock Project', icon: '🚀', color: 'from-red-500 to-pink-500' },
-              { name: 'Interview Prep', icon: '💼', color: 'from-teal-500 to-green-500' },
-              { name: 'Maven', icon: '📦', color: 'from-brown-500 to-orange-500' },
-              { name: 'GitHub', icon: '🐙', color: 'from-gray-700 to-gray-900' },
-              { name: 'Jenkins', icon: '⚙️', color: 'from-blue-600 to-indigo-600' },
-              { name: 'MySQL', icon: '🗄️', color: 'from-blue-500 to-blue-700' },
-              { name: 'Postman', icon: '📮', color: 'from-orange-500 to-red-500' },
-              { name: 'Rest Assured', icon: '🔒', color: 'from-green-500 to-teal-500' }
+              { name: 'Java', filename: 'Java.png', color: 'from-orange-500 to-red-500' },
+              { name: 'Selenium', filename: 'Selenium.png', color: 'from-green-500 to-blue-500' },
+              { name: 'Cucumber', filename: 'Cucumber.png', color: 'from-green-400 to-green-600' },
+              { name: 'Object Oriented Programming', filename: 'Object Oriented Programming.png', color: 'from-purple-500 to-pink-500' },
+              { name: 'TestNG', filename: 'TestNG.png', color: 'from-blue-500 to-purple-500' },
+              { name: 'Framework Development', filename: 'Framework Development.png', color: 'from-indigo-500 to-blue-500' },
+              { name: 'Agile Methodology', filename: 'Agile Methodology.png', color: 'from-yellow-500 to-orange-500' },
+              { name: 'Mock Project', filename: 'Moc Project.png', color: 'from-red-500 to-pink-500' },
+              { name: 'Interview Prep', filename: 'Interview Prep.png', color: 'from-teal-500 to-green-500' },
+              { name: 'Maven', filename: 'Maven.png', color: 'from-orange-600 to-red-600' },
+              { name: 'GitHub', filename: 'GitHub.png', color: 'from-gray-700 to-slate-900' },
+              { name: 'Jenkins', filename: 'Jenkins.png', color: 'from-blue-600 to-indigo-600' },
+              { name: 'MySQL', filename: 'mysql.png', color: 'from-blue-500 to-blue-700' },
+              { name: 'Postman', filename: 'Postman.png', color: 'from-orange-500 to-red-500' },
+              { name: 'Rest Assured', filename: 'Rest Assured.png', color: 'from-green-500 to-teal-500' }
             ].map((tech, index) => (
-              <Card key={index} className="bg-slate-800/50 border-slate-600 hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
-                <CardContent className="p-6 text-center">
-                  <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${tech.color} flex items-center justify-center text-2xl mb-4 mx-auto`}>
-                    {tech.icon}
-                  </div>
-                  <h3 className="text-white font-semibold text-lg">{tech.name}</h3>
-                </CardContent>
-              </Card>
+              <div key={index} className="group">
+                <Card className="bg-slate-800/30 border-slate-600/50 hover:bg-slate-700/50 transition-all duration-500 transform hover:scale-110 hover:rotate-2 backdrop-blur-sm relative overflow-hidden">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${tech.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                  <CardContent className="p-6 text-center relative z-10">
+                    <div className="relative mb-4">
+                      <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${tech.color} p-1 mx-auto group-hover:scale-110 transition-transform duration-500 shadow-lg group-hover:shadow-2xl`}>
+                        <div className="w-full h-full bg-white rounded-xl flex items-center justify-center p-2">
+                          <img 
+                            src={`/icons/${tech.filename}`} 
+                            alt={tech.name}
+                            className="w-full h-full object-contain"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                              e.target.parentElement.innerHTML = `<div class="w-full h-full flex items-center justify-center text-2xl font-bold text-gray-600">${tech.name.charAt(0)}</div>`;
+                            }}
+                          />
+                        </div>
+                      </div>
+                      <div className={`absolute -inset-2 bg-gradient-to-r ${tech.color} rounded-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 blur-lg -z-10`}></div>
+                    </div>
+                    <h3 className="text-white font-bold text-lg mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-500">
+                      {tech.name}
+                    </h3>
+                    <div className={`w-0 h-0.5 bg-gradient-to-r ${tech.color} mx-auto group-hover:w-full transition-all duration-500 rounded-full`}></div>
+                  </CardContent>
+                  
+                  {/* Animated corner accent */}
+                  <div className={`absolute top-0 right-0 w-0 h-0 group-hover:w-8 group-hover:h-8 bg-gradient-to-br ${tech.color} transition-all duration-500 opacity-60`}></div>
+                </Card>
+              </div>
             ))}
+          </div>
+
+          <div className="text-center mt-16">
+            <p className="text-gray-400 mb-6">Each technology is taught with hands-on projects and real-world applications</p>
+            <div className="flex justify-center space-x-4">
+              <div className="flex items-center bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600">
+                <Code className="h-5 w-5 text-blue-400 mr-2" />
+                <span className="text-gray-300">Hands-on Practice</span>
+              </div>
+              <div className="flex items-center bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600">
+                <Trophy className="h-5 w-5 text-yellow-400 mr-2" />
+                <span className="text-gray-300">Industry Standards</span>
+              </div>
+              <div className="flex items-center bg-slate-800/50 rounded-full px-6 py-3 border border-slate-600">
+                <Target className="h-5 w-5 text-green-400 mr-2" />
+                <span className="text-gray-300">Job-Ready Skills</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
