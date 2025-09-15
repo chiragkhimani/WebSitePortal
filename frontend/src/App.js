@@ -289,7 +289,7 @@ const App = () => {
       {/* Removed Course Modules Section as requested */}
 
       {/* Course Details Section */}
-      <section className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
+      <section id="courses-section" className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Course Details</h2>
@@ -298,115 +298,99 @@ const App = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-8">
-              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <Clock className="h-8 w-8 text-blue-400 mr-4" />
-                    <div>
-                      <h3 className="text-2xl font-bold text-white">Duration</h3>
-                      <p className="text-blue-400 text-xl font-semibold">6 Months</p>
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {/* Duration & Schedule Card */}
+            <Card className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/30 backdrop-blur-sm col-span-2">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-8">
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full p-4 mr-6">
+                    <Clock className="h-10 w-10 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2">Program Duration</h3>
+                    <p className="text-blue-400 text-2xl font-bold">6 Months Intensive Training</p>
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div className="bg-blue-500/10 rounded-xl p-6 border border-blue-500/20">
+                    <div className="flex items-center mb-4">
+                      <div className="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                      <h4 className="text-white font-bold text-lg">Weekdays</h4>
                     </div>
+                    <p className="text-gray-300 mb-2">Tuesday • Wednesday • Thursday</p>
+                    <p className="text-blue-400 font-bold text-xl">7:00 PM - 9:00 PM CST</p>
+                    <p className="text-gray-400 text-sm mt-2">Perfect for working professionals</p>
                   </div>
                   
-                  <div className="space-y-4">
-                    <div className="border-l-4 border-blue-500 pl-4">
-                      <h4 className="text-white font-semibold mb-2">Weekdays Schedule</h4>
-                      <p className="text-gray-300">Tuesday | Wednesday | Thursday</p>
-                      <p className="text-blue-400 font-semibold">7:00 PM to 9:00 PM CST</p>
+                  <div className="bg-purple-500/10 rounded-xl p-6 border border-purple-500/20">
+                    <div className="flex items-center mb-4">
+                      <div className="w-4 h-4 bg-purple-500 rounded-full mr-3"></div>
+                      <h4 className="text-white font-bold text-lg">Weekends</h4>
                     </div>
-                    
-                    <div className="border-l-4 border-purple-500 pl-4">
-                      <h4 className="text-white font-semibold mb-2">Weekend Schedule</h4>
-                      <p className="text-gray-300">Saturday | Sunday</p>
-                      <p className="text-purple-400 font-semibold">9:00 AM to 12:00 PM CST</p>
-                    </div>
+                    <p className="text-gray-300 mb-2">Saturday • Sunday</p>
+                    <p className="text-purple-400 font-bold text-xl">9:00 AM - 12:00 PM CST</p>
+                    <p className="text-gray-400 text-sm mt-2">Hands-on practice sessions</p>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <Target className="h-8 w-8 text-green-400 mr-4" />
-                    <div>
-                      <h3 className="text-2xl font-bold text-white">Entry Level</h3>
-                      <p className="text-green-400 text-xl font-semibold">No IT Background Required</p>
-                    </div>
+            {/* Entry Level Card */}
+            <Card className="bg-gradient-to-br from-green-500/10 to-teal-500/10 border-green-500/30 backdrop-blur-sm">
+              <CardContent className="p-8">
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-green-500 to-teal-500 rounded-full p-4 w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                    <Target className="h-10 w-10 text-white" />
                   </div>
-                  <p className="text-gray-300">Perfect for beginners and career changers looking to enter the SDET field</p>
-                </CardContent>
-              </Card>
+                  <h3 className="text-2xl font-bold text-white mb-4">Entry Level</h3>
+                  <p className="text-green-400 text-xl font-bold mb-4">No IT Background Required</p>
+                  <p className="text-gray-300">Perfect for beginners and career changers looking to enter the exciting SDET field</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Features Grid */}
+          <div className="mb-8">
+            <h3 className="text-3xl font-bold text-white text-center mb-12">What's Included in Your Journey</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { icon: PlayCircle, title: "Online Classes", desc: "Attend from Anywhere!", color: "from-blue-500 to-indigo-500" },
+                { icon: BookOpen, title: "Class Recordings", desc: "Access to the Recording of the Classes", color: "from-purple-500 to-pink-500" },
+                { icon: CheckCircle, title: "Homework", desc: "Plenty of Examples for Homework", color: "from-green-500 to-teal-500" },
+                { icon: Star, title: "Assessments", desc: "Bi Weekly Quizzes and Exams", color: "from-yellow-500 to-orange-500" },
+                { icon: Users, title: "Mentorship", desc: "Weekly 1 to 1 Mentorship", color: "from-red-500 to-pink-500" },
+                { icon: Code, title: "Real Projects", desc: "Real Time Mock Project Experience", color: "from-indigo-500 to-purple-500" },
+                { icon: Trophy, title: "Rewards", desc: "Lots of Rewards to Motivate Students on Exams", color: "from-teal-500 to-cyan-500" },
+                { icon: Target, title: "Interview Prep", desc: "Interview Preparation Sessions", color: "from-orange-500 to-red-500" }
+              ].map((feature, index) => (
+                <div key={index} className="group">
+                  <Card className="bg-slate-800/30 border-slate-600/50 hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm h-full">
+                    <CardContent className="p-6 text-center h-full flex flex-col justify-between">
+                      <div>
+                        <div className={`w-14 h-14 rounded-full bg-gradient-to-r ${feature.color} flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                          <feature.icon className="h-7 w-7 text-white" />
+                        </div>
+                        <h4 className="text-white font-bold text-lg mb-3">{feature.title}</h4>
+                      </div>
+                      <p className="text-gray-300 text-sm leading-relaxed">{feature.desc}</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-sm rounded-xl p-6 border border-blue-500/20">
-                  <div className="flex items-center mb-3">
-                    <PlayCircle className="h-6 w-6 text-blue-400 mr-3" />
-                    <h4 className="text-white font-semibold">Online Classes</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Attend from Anywhere!</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-purple-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-purple-500/20">
-                  <div className="flex items-center mb-3">
-                    <BookOpen className="h-6 w-6 text-purple-400 mr-3" />
-                    <h4 className="text-white font-semibold">Class Recordings</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Access to the Recording of the Classes</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-green-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-6 border border-green-500/20">
-                  <div className="flex items-center mb-3">
-                    <CheckCircle className="h-6 w-6 text-green-400 mr-3" />
-                    <h4 className="text-white font-semibold">Homework</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Plenty of Examples for Homework</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-xl p-6 border border-yellow-500/20">
-                  <div className="flex items-center mb-3">
-                    <Star className="h-6 w-6 text-yellow-400 mr-3" />
-                    <h4 className="text-white font-semibold">Assessments</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Bi Weekly Quizzes and Exams</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-red-500/20 to-pink-500/20 backdrop-blur-sm rounded-xl p-6 border border-red-500/20">
-                  <div className="flex items-center mb-3">
-                    <Users className="h-6 w-6 text-red-400 mr-3" />
-                    <h4 className="text-white font-semibold">Mentorship</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Weekly 1 to 1 Mentorship</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-indigo-500/20 to-blue-500/20 backdrop-blur-sm rounded-xl p-6 border border-indigo-500/20">
-                  <div className="flex items-center mb-3">
-                    <Code className="h-6 w-6 text-indigo-400 mr-3" />
-                    <h4 className="text-white font-semibold">Real Projects</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Real Time Mock Project Experience</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-teal-500/20 to-green-500/20 backdrop-blur-sm rounded-xl p-6 border border-teal-500/20">
-                  <div className="flex items-center mb-3">
-                    <Trophy className="h-6 w-6 text-teal-400 mr-3" />
-                    <h4 className="text-white font-semibold">Rewards</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Lots of Rewards to Motivate Students on Exams</p>
-                </div>
-
-                <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-sm rounded-xl p-6 border border-orange-500/20">
-                  <div className="flex items-center mb-3">
-                    <Target className="h-6 w-6 text-orange-400 mr-3" />
-                    <h4 className="text-white font-semibold">Interview Prep</h4>
-                  </div>
-                  <p className="text-gray-300 text-sm">Interview Preparation Sessions</p>
-                </div>
-              </div>
-            </div>
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 text-lg font-semibold rounded-full"
+              onClick={() => document.getElementById('enrollment-section')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Start Your SDET Journey Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
       </section>
