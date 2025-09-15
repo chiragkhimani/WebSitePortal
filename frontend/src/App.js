@@ -35,6 +35,7 @@ const App = () => {
   });
   const [submitStatus, setSubmitStatus] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [pricingMode, setPricingMode] = useState('onetime'); // 'monthly' or 'onetime'
 
   useEffect(() => {
     fetchCourses();
