@@ -389,7 +389,7 @@ const App = () => {
               className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 text-lg font-semibold rounded-full"
               onClick={() => document.getElementById('enrollment-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Start Your SDET Journey Today
+              Start Your IT Journey Today
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
