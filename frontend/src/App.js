@@ -238,12 +238,34 @@ const App = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3" 
-                alt="Professional programming setup" 
-                className="rounded-2xl shadow-2xl w-full object-cover"
-              />
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1653387137517-fbc54d488ed8" 
+                  alt="Dynamic coding environment" 
+                  className="w-full object-cover transform hover:scale-105 transition-transform duration-700"
+                />
+                {/* Animated overlay elements to simulate coding activity */}
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
+                
+                {/* Floating code elements */}
+                <div className="absolute top-4 right-4 bg-green-500/20 backdrop-blur-sm rounded-lg px-3 py-1 animate-pulse">
+                  <span className="text-green-400 text-sm font-mono">✓ Tests Passing</span>
+                </div>
+                
+                <div className="absolute bottom-4 left-4 bg-blue-500/20 backdrop-blur-sm rounded-lg px-3 py-1 animate-bounce">
+                  <span className="text-blue-400 text-sm font-mono">{ } Live Coding</span>
+                </div>
+                
+                {/* Animated particles */}
+                <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-ping"></div>
+                <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-purple-400 rounded-full animate-pulse delay-500"></div>
+                <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-blue-400 rounded-full animate-ping delay-1000"></div>
+              </div>
+              
+              {/* Additional animated elements around the image */}
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full opacity-60 animate-pulse"></div>
+              <div className="absolute -bottom-4 -right-4 w-6 h-6 bg-gradient-to-r from-green-500 to-teal-500 rounded-full opacity-60 animate-pulse delay-700"></div>
             </div>
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
