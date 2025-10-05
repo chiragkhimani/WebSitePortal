@@ -1112,11 +1112,20 @@ const App = () => {
         </div>
       </section>
 
+      {/* Floating WhatsApp Icon */}
+      <a
+        href="https://wa.link/vmiqhs"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 z-50 animate-pulse hover:animate-none"
+        title="Contact us on WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" />
+      </a>
+
       {/* Footer */}
       <footer className="py-16 px-4 bg-slate-900">
         <div className="max-w-7xl mx-auto text-center">
-          <h3 className="text-3xl font-bold text-white mb-4">SDET Mastery Program</h3>
-          <p className="text-gray-400 mb-8">Transforming careers through comprehensive software testing education</p>
           <div className="text-sm text-gray-500">
             Copyright © 2025 Chirag Khimani | All Rights Reserved.
           </div>
