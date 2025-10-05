@@ -274,25 +274,32 @@ img {
   }
 }
 
-/* Handwritten text animation */
-@keyframes handwrite {
+/* Typewriter animation */
+@keyframes typewriter {
   0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  50% {
-    opacity: 0.7;
-    transform: translateY(-5px);
+    width: 0;
   }
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    width: 100%;
   }
 }
 
-.handwritten {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-  animation: handwrite 2s ease-in-out infinite alternate;
+@keyframes cursor-blink {
+  0%, 50% {
+    border-color: #93c5fd;
+  }
+  51%, 100% {
+    border-color: transparent;
+  }
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid #93c5fd;
+  white-space: nowrap;
+  animation: typewriter 3s steps(35) 1s forwards, cursor-blink 1s infinite;
+  width: 0;
+  display: inline-block;
 }
 
 /* Print styles */
