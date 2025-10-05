@@ -764,94 +764,77 @@ const App = () => {
             </p>
           </div>
 
-          {/* Mission Statement */}
-          <div className="text-center mb-16">
-            <div className="bg-slate-800/30 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm max-w-4xl mx-auto">
-              <h3 className="text-4xl font-bold text-white mb-6">Our Mission</h3>
-              <p className="text-gray-300 text-2xl leading-relaxed">
-                We bridge the gap between non-IT backgrounds and high-demand IT careers. Whether you're a <span className="text-pink-400 font-bold">housewife</span>, <span className="text-blue-400 font-bold">nurse</span>, or <span className="text-orange-400 font-bold">truck driver</span>, you can become an IT professional in just <span className="text-purple-400 font-bold">6 months</span>.
-              </p>
-            </div>
-          </div>
-
-          {/* Author & Books Section */}
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            {/* Author Profile */}
-            <div className="lg:col-span-1">
-              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm text-center h-full flex flex-col justify-center">
-                <div className="mb-6">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
-                    alt="Chirag Khimani - SDET Trainer" 
-                    className="w-40 h-40 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-2xl mb-4"
-                  />
-                </div>
-                <h4 className="text-2xl font-bold text-white mb-3">Chirag Khimani</h4>
-                <p className="text-blue-400 font-semibold mb-2">SDET Trainer & QA Automation Consultant</p>
-                <p className="text-gray-400 text-sm mb-4">Author • Mentor • Industry Expert</p>
-                <div className="text-gray-300 text-sm">
-                  <p>Years of hands-on experience in test automation, Java development, and mentoring students worldwide.</p>
+            {/* Mission & Books Section */}
+            <div className="lg:col-span-2">
+              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm h-full">
+                <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">
+                  We bridge the gap between non-IT backgrounds and high-demand IT careers. Whether you're a <span className="text-pink-400 font-bold">housewife</span>, <span className="text-blue-400 font-bold">nurse</span>, or <span className="text-orange-400 font-bold">truck driver</span>, you can become an IT professional in just <span className="text-purple-400 font-bold">6 months</span>.
+                </p>
+                
+                {/* Books Section */}
+                <div className="border-t border-slate-600 pt-6">
+                  <h4 className="text-xl font-bold text-white mb-4">Published Java Resources</h4>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <a 
+                      href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl p-4 transition-all duration-300 border border-slate-600/50 hover:border-orange-500/50 transform hover:scale-105"
+                    >
+                      <div className="flex items-start space-x-4">
+                        <img 
+                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/dnvadr71_Java%20Revision%20Notes.jpg"
+                          alt="Java Revision Notes"
+                          className="w-16 h-20 object-cover rounded drop-shadow-lg flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h5 className="text-orange-400 font-bold text-sm group-hover:text-orange-300 mb-1">Java Revision Notes</h5>
+                          <p className="text-gray-400 text-xs mb-2">Color Coded Edition</p>
+                          <p className="text-gray-300 text-xs leading-relaxed">Quick interview prep in hours, not weeks</p>
+                        </div>
+                      </div>
+                    </a>
+                    
+                    <a 
+                      href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl p-4 transition-all duration-300 border border-slate-600/50 hover:border-green-500/50 transform hover:scale-105"
+                    >
+                      <div className="flex items-start space-x-4">
+                        <img 
+                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/wxafsi10_Java%20Coding%20Program.jpeg"
+                          alt="Java Coding Programs"
+                          className="w-16 h-20 object-cover rounded drop-shadow-lg flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h5 className="text-green-400 font-bold text-sm group-hover:text-green-300 mb-1">Java Coding Programs</h5>
+                          <p className="text-gray-400 text-xs mb-2">Color Coded Edition</p>
+                          <p className="text-gray-300 text-xs leading-relaxed">Build problem-solving mindset</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* Books Section */}
-            <div className="lg:col-span-2">
-              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm h-full">
-                <h4 className="text-2xl font-bold text-white mb-6 text-center">Published Java Resources</h4>
-                <div className="grid md:grid-cols-2 gap-6">
-                  {/* Java Revision Notes */}
-                  <a 
-                    href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl overflow-hidden transition-all duration-300 border border-slate-600/50 hover:border-orange-500/50 transform hover:scale-105 shadow-lg hover:shadow-2xl"
-                  >
-                    <div className="aspect-[4/5] relative">
-                      <img 
-                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/dnvadr71_Java%20Revision%20Notes.jpg"
-                        alt="Java Revision Notes Book Cover"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
-                    </div>
-                    <div className="p-4">
-                      <h5 className="text-orange-400 font-bold text-lg mb-2 group-hover:text-orange-300">Java Revision Notes</h5>
-                      <p className="text-gray-400 text-sm mb-2">Color Coded Edition</p>
-                      <div className="space-y-1 text-xs text-gray-300">
-                        <p>• Specially designed for coding interview preparation</p>
-                        <p>• Includes purpose, syntax, and examples</p>
-                        <p>• Color-coded book for easy understanding</p>
-                      </div>
-                    </div>
-                  </a>
-
-                  {/* Java Coding Programs */}
-                  <a 
-                    href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl overflow-hidden transition-all duration-300 border border-slate-600/50 hover:border-green-500/50 transform hover:scale-105 shadow-lg hover:shadow-2xl"
-                  >
-                    <div className="aspect-[4/5] relative">
-                      <img 
-                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/wxafsi10_Java%20Coding%20Program.jpeg"
-                        alt="Java Coding Programs Book Cover"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
-                    </div>
-                    <div className="p-4">
-                      <h5 className="text-green-400 font-bold text-lg mb-2 group-hover:text-green-300">Java Coding Programs</h5>
-                      <p className="text-gray-400 text-sm mb-2">Color Coded Edition</p>
-                      <div className="space-y-1 text-xs text-gray-300">
-                        <p>• More than 300 solved coding programs</p>
-                        <p>• Specially designed for coding interview preparation</p>
-                        <p>• Color-coded book for easy understanding</p>
-                      </div>
-                    </div>
-                  </a>
+            {/* Author Profile Section */}
+            <div>
+              <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-600 backdrop-blur-sm text-center h-full flex flex-col justify-center">
+                <div className="mb-6">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
+                    alt="Chirag Khimani - SDET Trainer" 
+                    className="w-36 h-36 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-2xl"
+                  />
                 </div>
+                <h4 className="text-xl font-bold text-white mb-2">Chirag Khimani</h4>
+                <p className="text-blue-400 font-semibold mb-2 text-sm">SDET Trainer & QA Automation Consultant</p>
+                <p className="text-gray-400 text-xs mb-4">Author • Mentor • Industry Expert</p>
+                <p className="text-gray-300 text-sm">Years of hands-on experience in test automation, Java development, and mentoring students worldwide.</p>
               </div>
             </div>
           </div>
