@@ -295,7 +295,7 @@ const App = () => {
         <div className="relative max-w-7xl mx-auto text-center">
           <div className="mb-8">
             <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-lg font-semibold">
-              🚀 #1 SDET Training Program
+              🚀 From Zero to IT Professional in 6 Months
             </Badge>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
