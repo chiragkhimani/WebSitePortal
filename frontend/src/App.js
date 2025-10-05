@@ -276,6 +276,19 @@ const App = () => {
           )}
         </div>
       </header>
+
+      {/* Minimal Notification Banner */}
+      <div className="bg-gradient-to-r from-orange-500/20 to-red-500/20 backdrop-blur-sm border-b border-orange-500/30 py-2 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center justify-center space-x-3 text-sm">
+            <Calendar className="h-4 w-4 text-orange-400" />
+            <span className="text-orange-100 font-medium">Next Batch Starts 04 November 2025</span>
+            <span className="text-orange-300">•</span>
+            <span className="text-orange-200 text-xs">Limited Seats Available!</span>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="relative overflow-hidden py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
