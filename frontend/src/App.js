@@ -252,35 +252,35 @@ const App = () => {
 
           {/* Mobile Navigation */}
           {mobileMenuOpen && (
-            <div className="md:hidden bg-slate-800 border-t border-slate-700">
+            <div className="md:hidden bg-gradient-to-r from-slate-900/90 to-blue-900/90 backdrop-blur-md border-t border-blue-500/20">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <button
                   onClick={() => scrollToSection('courses-section')}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-slate-700 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-blue-200/80 hover:text-white hover:bg-blue-500/20 rounded-md transition-colors duration-200"
                 >
                   Course Details
                 </button>
                 <button
                   onClick={() => scrollToSection('curriculum-section')}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-slate-700 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-blue-200/80 hover:text-white hover:bg-blue-500/20 rounded-md transition-colors duration-200"
                 >
                   Course Curriculum
                 </button>
                 <button
                   onClick={() => scrollToSection('pricing-section')}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-slate-700 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-blue-200/80 hover:text-white hover:bg-blue-500/20 rounded-md transition-colors duration-200"
                 >
                   Pricing Plans
                 </button>
                 <button
                   onClick={() => scrollToSection('about-section')}
-                  className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-slate-700 rounded-md transition-colors duration-200"
+                  className="block w-full text-left px-3 py-2 text-blue-200/80 hover:text-white hover:bg-blue-500/20 rounded-md transition-colors duration-200"
                 >
                   About Us
                 </button>
                 <button
                   onClick={() => scrollToSection('enrollment-section')}
-                  className="block w-full text-left px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-md font-semibold mt-2"
+                  className="block w-full text-left px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-md font-semibold mt-2 shadow-lg"
                 >
                   Contact Us
                 </button>
