@@ -142,10 +142,10 @@ const App = () => {
   };
 
   const stats = [
-    { icon: Users, label: 'Students Trained', value: '5,000+' },
-    { icon: Trophy, label: 'Highest Package Offered', value: '$180k' },
-    { icon: Star, label: 'Industry Rating', value: '4.9/5' },
-    { icon: Target, label: 'Job Placement', value: '85%' }
+    { icon: Users, label: 'Students Trained', value: '5,000+', color: 'from-blue-500 to-cyan-500', iconColor: 'text-cyan-400' },
+    { icon: Trophy, label: 'Highest Package Offered', value: '$180k', color: 'from-yellow-500 to-orange-500', iconColor: 'text-yellow-400' },
+    { icon: Star, label: 'Industry Rating', value: '4.9/5', color: 'from-purple-500 to-pink-500', iconColor: 'text-pink-400' },
+    { icon: Target, label: 'Job Placement', value: '85%', color: 'from-green-500 to-emerald-500', iconColor: 'text-green-400' }
   ];
 
   const testimonials = [
