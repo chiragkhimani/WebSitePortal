@@ -984,7 +984,7 @@ const App = () => {
                           value={enrollmentForm.email}
                           onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('email')(e.target.value)}
                           required
-                          className="bg-slate-700 border-slate-600 text-white"
+                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
                           placeholder="Enter your email"
                         />
                       </div>
