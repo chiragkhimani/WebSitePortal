@@ -824,17 +824,13 @@ const App = () => {
               <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-600 backdrop-blur-sm text-center h-full flex flex-col justify-center">
                 <div className="mb-6 flex justify-center">
                   <div className="relative">
-                    <img 
-                      src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
-                      alt="Chirag Khimani - SDET Trainer" 
-                      className="w-40 h-40 rounded-full object-cover border-4 border-gradient-to-r from-blue-500 to-purple-500 shadow-2xl"
-                    />
-                    <div className="absolute inset-0 rounded-full border-4 border-transparent bg-gradient-to-r from-blue-500 to-purple-500 -m-1"></div>
-                    <img 
-                      src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
-                      alt="Chirag Khimani - SDET Trainer" 
-                      className="relative w-40 h-40 rounded-full object-cover shadow-2xl"
-                    />
+                    <div className="w-40 h-40 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 p-1 shadow-2xl">
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/lzex97p7_Untitled%20design.png" 
+                        alt="Chirag Khimani - SDET Trainer" 
+                        className="w-full h-full rounded-full object-cover bg-white"
+                      />
+                    </div>
                   </div>
                 </div>
                 <h4 className="text-xl font-bold text-white mb-2">Chirag Khimani</h4>
