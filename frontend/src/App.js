@@ -799,9 +799,23 @@ const App = () => {
                 <h4 className="text-2xl font-bold text-white mb-2">Chirag Khimani</h4>
                 <p className="text-blue-400 font-semibold mb-4">SDET Trainer & QA Automation Consultant</p>
                 <div className="space-y-2 text-gray-300">
-                  <p className="text-sm">Author of Java Books:</p>
-                  <p className="font-semibold text-green-400">• Java Revision Notes – Color Coded</p>
-                  <p className="font-semibold text-green-400">• Java Coding Programs – Color Coded</p>
+                  <p className="text-sm mb-3">Author of Java Books:</p>
+                  <a 
+                    href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block font-semibold text-green-400 hover:text-green-300 transition-colors duration-200 hover:underline"
+                  >
+                    • Java Revision Notes – Color Coded
+                  </a>
+                  <a 
+                    href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block font-semibold text-green-400 hover:text-green-300 transition-colors duration-200 hover:underline"
+                  >
+                    • Java Coding Programs – Color Coded
+                  </a>
                 </div>
               </div>
             </div>
