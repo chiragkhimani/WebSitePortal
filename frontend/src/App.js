@@ -751,6 +751,105 @@ const App = () => {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section id="about-section" className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl font-bold text-white mb-6">About Us</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Transforming careers from non-IT backgrounds to high-demand IT professionals
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            <div className="space-y-6">
+              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm">
+                <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                  Our mission is simple: to bridge the gap between non-IT backgrounds and high-demand IT careers. 
+                  If you're motivated to change your career, we'll guide you every step of the way.
+                </p>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  We believe anyone, whether a housewife, nurse, truck driver, or someone from a completely non-IT background 
+                  can transform their career into a successful IT Professional. Our six-month, live training program is designed 
+                  to take you from absolute beginner to job-ready professional, with a clear focus on practical skills, 
+                  industry tools, and career readiness.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm">
+                <div className="mb-6">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
+                    alt="Chirag Khimani - SDET Trainer" 
+                    className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-2xl"
+                  />
+                </div>
+                <h4 className="text-2xl font-bold text-white mb-2">Chirag Khimani</h4>
+                <p className="text-blue-400 font-semibold mb-4">SDET Trainer & QA Automation Consultant</p>
+                <div className="space-y-2 text-gray-300">
+                  <p className="text-sm">Author of Java Books:</p>
+                  <p className="font-semibold text-green-400">• Java Revision Notes – Color Coded</p>
+                  <p className="font-semibold text-green-400">• Java Coding Programs – Color Coded</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-slate-800/30 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm">
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              The program is led by <span className="text-blue-400 font-semibold">Chirag Khimani</span>, a seasoned SDET Trainer, 
+              QA Automation Consultant, and Author of two popular Java books: Java Revision Notes – Color Coded and 
+              Java Coding Programs – Color Coded. With years of hands-on experience in test automation, Java development, 
+              and mentoring students worldwide, Chirag combines deep technical expertise with a passion for teaching.
+            </p>
+
+            <h3 className="text-3xl font-bold text-white mb-8 text-center">What Sets Us Apart</h3>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  title: "Foundation Building",
+                  description: "Start with Java and programming logic, even if you have zero prior coding experience.",
+                  icon: BookOpen,
+                  color: "from-blue-500 to-indigo-500"
+                },
+                {
+                  title: "Industry-Ready Tools",
+                  description: "Learn Selenium, Playwright, Appium, RestAssured, Cucumber, TestNG, Jenkins, GitHub, Docker, and more.",
+                  icon: Code,
+                  color: "from-purple-500 to-pink-500"
+                },
+                {
+                  title: "Career Preparation",
+                  description: "Resume building, LinkedIn optimization, mock interviews, and guidance to crack real job interviews.",
+                  icon: Target,
+                  color: "from-green-500 to-teal-500"
+                },
+                {
+                  title: "Proven Results",
+                  description: "Alumni have successfully transitioned to IT careers in the US, Canada, and India, securing high-paying automation roles.",
+                  icon: Trophy,
+                  color: "from-yellow-500 to-orange-500"
+                }
+              ].map((feature, index) => (
+                <Card key={index} className="bg-slate-800/50 border-slate-600 hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+                  <CardContent className="p-6 text-center">
+                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${feature.color} flex items-center justify-center mx-auto mb-4`}>
+                      <feature.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h4 className="text-white font-bold text-lg mb-3">{feature.title}</h4>
+                    <p className="text-gray-300 text-sm leading-relaxed">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
