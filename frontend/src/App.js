@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '.
 import { Textarea } from './components/ui/textarea';
 import { Badge } from './components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
-import { AlertCircle, BookOpen, Code, Users, Star, ArrowRight, CheckCircle, Clock, Target, Trophy, Zap, PlayCircle } from 'lucide-react';
+import { AlertCircle, BookOpen, Code, Users, Star, ArrowRight, CheckCircle, Clock, Target, Trophy, Zap, PlayCircle, Menu, X, Calendar } from 'lucide-react';
 import { Alert, AlertDescription } from './components/ui/alert';
 import axios from 'axios';
 
