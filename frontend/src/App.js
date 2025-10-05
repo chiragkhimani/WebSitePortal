@@ -1005,7 +1005,7 @@ const App = () => {
                     </Alert>
                   )}
                   
-                      <form onSubmit={handleEnrollmentSubmit} className="space-y-8">
+                      <form onSubmit={handleEnrollmentSubmit} className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-6">
                           <div className="space-y-2">
                             <Label htmlFor="name" className="text-white text-base font-semibold flex items-center">
