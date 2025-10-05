@@ -320,7 +320,7 @@ const App = () => {
                       <h4 className="text-white font-bold text-lg">Weekdays</h4>
                     </div>
                     <p className="text-gray-300 mb-2">Tuesday • Wednesday • Thursday</p>
-                    <p className="text-blue-400 font-bold text-xl">7:00 PM - 9:00 PM CST</p>
+                    <p className="text-blue-400 font-bold text-xl">8:00 PM - 10:00 PM CST</p>
                     <p className="text-gray-400 text-sm mt-2">Perfect for working professionals</p>
                   </div>
                   
@@ -330,7 +330,7 @@ const App = () => {
                       <h4 className="text-white font-bold text-lg">Weekends</h4>
                     </div>
                     <p className="text-gray-300 mb-2">Saturday • Sunday</p>
-                    <p className="text-purple-400 font-bold text-xl">9:00 AM - 12:00 PM CST</p>
+                    <p className="text-purple-400 font-bold text-xl">10:00 AM - 1:00 PM CST</p>
                     <p className="text-gray-400 text-sm mt-2">Hands-on practice sessions</p>
                   </div>
                 </div>
