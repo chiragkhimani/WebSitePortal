@@ -1092,19 +1092,30 @@ const App = () => {
                       {isSubmitting ? 'Submitting...' : 'Submit Enrollment'}
                     </Button>
                   </form>
-                </CardContent>
+                    </CardContent>
+                  </div>
+                </div>
               </Card>
             </TabsContent>
 
-            <TabsContent value="contact">
-              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-white">Contact Us</CardTitle>
-                  <CardDescription className="text-gray-300">
-                    Have questions? Get in touch with our team
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
+            <TabsContent value="contact" className="mt-8">
+              <Card className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 border-slate-600 backdrop-blur-sm shadow-2xl rounded-3xl overflow-hidden">
+                <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-1">
+                  <div className="bg-slate-800/80 rounded-3xl">
+                    <CardHeader className="pb-8 pt-10 px-10">
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-4 shadow-lg">
+                          <MessageCircle className="h-8 w-8 text-white" />
+                        </div>
+                        <CardTitle className="text-4xl text-white mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                          Contact Us
+                        </CardTitle>
+                        <CardDescription className="text-gray-300 text-xl leading-relaxed">
+                          Have questions about our SDET program? Our expert team is here to help you make the right career decision
+                        </CardDescription>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="px-10 pb-10">
                   <form onSubmit={handleContactSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
