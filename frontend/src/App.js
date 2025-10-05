@@ -293,13 +293,13 @@ const App = () => {
       <section className="relative overflow-hidden py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
         <div className="relative max-w-7xl mx-auto text-center">
-          <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp
           </h1>
-          <div className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold italic text-center">
+          <div className="text-xl md:text-2xl text-blue-300 mb-8 font-semibold italic text-center">
             <span className="typewriter">A journey from Aspirant to Achievements</span>
           </div>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Transform your career with our comprehensive SDET program. Learn cutting-edge automation frameworks, 
             API testing, AI Tools, and land your dream job at top tech companies.
           </p>
