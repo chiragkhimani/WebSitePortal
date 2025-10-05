@@ -957,22 +957,22 @@ const App = () => {
           </div>
 
           <Tabs defaultValue="enrollment" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 bg-gradient-to-r from-slate-800/50 to-slate-700/50 border border-slate-600 rounded-2xl p-2 backdrop-blur-sm">
+            <TabsList className="grid w-full grid-cols-2 bg-slate-800/40 border border-slate-600/50 rounded-xl p-1 backdrop-blur-sm">
               <TabsTrigger 
                 value="enrollment" 
-                className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500 data-[state=active]:shadow-lg py-4 px-8 text-xl font-bold rounded-xl transition-all duration-300 data-[state=active]:scale-105"
+                className="text-gray-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500/80 data-[state=active]:to-purple-500/80 data-[state=active]:text-white data-[state=active]:shadow-md py-3 px-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:bg-slate-700/50"
               >
                 <div className="flex items-center space-x-2">
-                  <BookOpen className="h-6 w-6" />
+                  <BookOpen className="h-5 w-5" />
                   <span>Course Enrollment</span>
                 </div>
               </TabsTrigger>
               <TabsTrigger 
                 value="contact" 
-                className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-500 data-[state=active]:shadow-lg py-4 px-8 text-xl font-bold rounded-xl transition-all duration-300 data-[state=active]:scale-105"
+                className="text-gray-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500/80 data-[state=active]:to-pink-500/80 data-[state=active]:text-white data-[state=active]:shadow-md py-3 px-6 text-lg font-semibold rounded-lg transition-all duration-300 hover:bg-slate-700/50"
               >
                 <div className="flex items-center space-x-2">
-                  <MessageCircle className="h-6 w-6" />
+                  <MessageCircle className="h-5 w-5" />
                   <span>Contact Us</span>
                 </div>
               </TabsTrigger>
