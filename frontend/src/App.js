@@ -278,22 +278,12 @@ const App = () => {
                 >
                   About Us
                 </button>
-                <div className="flex space-x-2 mt-2">
-                  <a
-                    href="https://wa.link/vmiqhs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-md font-semibold text-center transition-colors duration-200"
-                  >
-                    WhatsApp
-                  </a>
-                  <button
-                    onClick={() => scrollToSection('enrollment-section')}
-                    className="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-3 py-2 rounded-md font-semibold"
-                  >
-                    Contact Us
-                  </button>
-                </div>
+                <button
+                  onClick={() => scrollToSection('enrollment-section')}
+                  className="block w-full text-left px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-md font-semibold mt-2"
+                >
+                  Contact Us
+                </button>
               </div>
             </div>
           )}
