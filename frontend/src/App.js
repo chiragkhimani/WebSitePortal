@@ -795,40 +795,46 @@ const App = () => {
                 <h4 className="text-2xl font-bold text-white mb-2">Chirag Khimani</h4>
                 <p className="text-blue-400 font-semibold mb-4">SDET Trainer & QA Automation Consultant</p>
                 <div className="space-y-4 text-gray-300">
-                  <p className="text-sm mb-4 font-semibold">Author of Java Books:</p>
-                  <div className="grid grid-cols-2 gap-4">
+                  <p className="text-sm mb-6 font-semibold text-center">Author of Java Books:</p>
+                  <div className="flex justify-center space-x-8">
                     <a 
                       href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group transition-all duration-300 transform hover:scale-105"
+                      className="group transition-all duration-300 transform hover:scale-110"
                     >
-                      <div className="bg-slate-700/50 rounded-lg p-3 hover:bg-slate-600/50 transition-colors duration-200">
-                        <img 
-                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/uq3jtwg2_Revision%20Book.png"
-                          alt="Java Revision Notes Book Cover"
-                          className="w-full h-32 object-cover rounded mb-2"
-                        />
-                        <p className="text-xs font-semibold text-blue-400 group-hover:text-blue-300 text-center">
-                          Java Revision Notes – Color Coded
-                        </p>
+                      <div className="text-center">
+                        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl p-4 hover:from-blue-500/20 hover:to-purple-500/20 transition-colors duration-300 border border-blue-500/20">
+                          <img 
+                            src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/rthy7m5k_Revision_Book-removebg-preview.png"
+                            alt="Java Revision Notes Book Cover"
+                            className="w-20 h-28 object-contain mx-auto mb-3 drop-shadow-lg"
+                          />
+                          <p className="text-xs font-semibold text-blue-400 group-hover:text-blue-300">
+                            Java Revision Notes
+                          </p>
+                          <p className="text-xs text-gray-400">Color Coded</p>
+                        </div>
                       </div>
                     </a>
                     <a 
                       href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group transition-all duration-300 transform hover:scale-105"
+                      className="group transition-all duration-300 transform hover:scale-110"
                     >
-                      <div className="bg-slate-700/50 rounded-lg p-3 hover:bg-slate-600/50 transition-colors duration-200">
-                        <img 
-                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/a3q4vy78_coding%20book.png"
-                          alt="Java Coding Programs Book Cover"
-                          className="w-full h-32 object-cover rounded mb-2"
-                        />
-                        <p className="text-xs font-semibold text-purple-400 group-hover:text-purple-300 text-center">
-                          Java Coding Programs – Color Coded
-                        </p>
+                      <div className="text-center">
+                        <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl p-4 hover:from-purple-500/20 hover:to-pink-500/20 transition-colors duration-300 border border-purple-500/20">
+                          <img 
+                            src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/d1zetxjs_coding_book-removebg-preview.png"
+                            alt="Java Coding Programs Book Cover"
+                            className="w-20 h-28 object-contain mx-auto mb-3 drop-shadow-lg"
+                          />
+                          <p className="text-xs font-semibold text-purple-400 group-hover:text-purple-300">
+                            Java Coding Programs
+                          </p>
+                          <p className="text-xs text-gray-400">Color Coded</p>
+                        </div>
                       </div>
                     </a>
                   </div>
