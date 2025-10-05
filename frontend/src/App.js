@@ -513,7 +513,7 @@ const App = () => {
       </section>
 
       {/* Course Curriculum Section */}
-      <section className="py-24 px-4">
+      <section id="curriculum-section" className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Course Curriculum</h2>
