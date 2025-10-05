@@ -211,31 +211,31 @@ const App = () => {
             <nav className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection('courses-section')}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                className="text-blue-200/80 hover:text-white hover:bg-blue-500/20 px-3 py-2 rounded-lg transition-all duration-200 font-medium"
               >
                 Course Details
               </button>
               <button
                 onClick={() => scrollToSection('curriculum-section')}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                className="text-blue-200/80 hover:text-white hover:bg-blue-500/20 px-3 py-2 rounded-lg transition-all duration-200 font-medium"
               >
                 Course Curriculum
               </button>
               <button
                 onClick={() => scrollToSection('pricing-section')}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                className="text-blue-200/80 hover:text-white hover:bg-blue-500/20 px-3 py-2 rounded-lg transition-all duration-200 font-medium"
               >
                 Pricing Plans
               </button>
               <button
                 onClick={() => scrollToSection('about-section')}
-                className="text-gray-300 hover:text-white transition-colors duration-200 font-medium"
+                className="text-blue-200/80 hover:text-white hover:bg-blue-500/20 px-3 py-2 rounded-lg transition-all duration-200 font-medium"
               >
                 About Us
               </button>
               <button
                 onClick={() => scrollToSection('enrollment-section')}
-                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 transform hover:scale-105"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg"
               >
                 Contact Us
               </button>
