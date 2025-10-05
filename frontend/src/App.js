@@ -1134,20 +1134,20 @@ const App = () => {
               <Card className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 border-slate-600 backdrop-blur-sm shadow-2xl rounded-3xl overflow-hidden">
                 <div className="bg-gradient-to-r from-purple-500/20 to-pink-500/20 p-1">
                   <div className="bg-slate-800/80 rounded-3xl">
-                    <CardHeader className="pb-8 pt-10 px-10">
-                      <div className="text-center mb-6">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-4 shadow-lg">
-                          <MessageCircle className="h-8 w-8 text-white" />
+                    <CardHeader className="pb-6 pt-8 px-8">
+                      <div className="text-center mb-4">
+                        <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mb-3 shadow-lg">
+                          <MessageCircle className="h-6 w-6 text-white" />
                         </div>
-                        <CardTitle className="text-4xl text-white mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        <CardTitle className="text-3xl text-white mb-3 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
                           Contact Us
                         </CardTitle>
-                        <CardDescription className="text-gray-300 text-xl leading-relaxed">
+                        <CardDescription className="text-gray-300 text-lg leading-relaxed">
                           Have questions about our SDET program? Our expert team is here to help you make the right career decision
                         </CardDescription>
                       </div>
                     </CardHeader>
-                    <CardContent className="px-10 pb-10">
+                    <CardContent className="px-8 pb-8">
                       <form onSubmit={handleContactSubmit} className="space-y-8">
                         <div className="grid md:grid-cols-2 gap-8">
                           <div className="space-y-2">
