@@ -750,9 +750,10 @@ const App = () => {
             <div className="lg:col-span-2">
               <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm h-full">
                 <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  We bridge the gap between non-IT backgrounds and high-demand IT careers. Whether you're a <span className="text-pink-400 font-bold">housewife</span>, <span className="text-blue-400 font-bold">nurse</span>, or <span className="text-orange-400 font-bold">truck driver</span>, you can become an IT professional in just <span className="text-purple-400 font-bold">6 months</span>.
-                </p>
+                <div className="text-gray-300 text-lg leading-relaxed mb-8 space-y-4">
+                  <p>We bridge the gap between non-IT backgrounds and high-demand IT careers.</p>
+                  <p>Whether you're a <span className="text-pink-400 font-bold">housewife</span>, <span className="text-blue-400 font-bold">nurse</span>, or <span className="text-orange-400 font-bold">truck driver</span>, you can become an IT professional in just <span className="text-purple-400 font-bold">6 months</span>.</p>
+                </div>
                 
                 {/* Books Section */}
                 <div className="border-t border-slate-600 pt-6">
