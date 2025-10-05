@@ -563,10 +563,10 @@ const App = () => {
                     {pricingMode === 'monthly' ? '$1,000' : '$5,000'}
                   </div>
                   <p className="text-gray-300">
-                    {pricingMode === 'monthly' ? 'Per Month × 2 Months' : 'One Time Payment'}
+                    {pricingMode === 'monthly' ? 'Per Month × 6 Months' : 'One Time Payment'}
                   </p>
                   {pricingMode === 'monthly' && (
-                    <p className="text-blue-400 text-sm mt-2">Total: $2,000 (8-Week Program)</p>
+                    <p className="text-blue-400 text-sm mt-2">Total: $6,000 (6-Month Program)</p>
                   )}
                 </div>
 
