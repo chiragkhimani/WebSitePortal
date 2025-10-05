@@ -1137,7 +1137,7 @@ const App = () => {
         href="https://wa.link/vmiqhs"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 z-50 animate-pulse hover:animate-none"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 z-50"
         title="Contact us on WhatsApp"
       >
         <MessageCircle className="h-6 w-6" />
