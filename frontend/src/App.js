@@ -779,7 +779,7 @@ const App = () => {
                   If you're motivated to change your career, we'll guide you every step of the way.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  We believe anyone, whether a housewife, nurse, truck driver, or someone from a completely non-IT background 
+                  We believe anyone, whether a <span className="bg-gradient-to-r from-pink-500 to-rose-500 px-2 py-1 rounded-md text-white font-semibold">housewife</span>, <span className="bg-gradient-to-r from-blue-500 to-cyan-500 px-2 py-1 rounded-md text-white font-semibold">nurse</span>, <span className="bg-gradient-to-r from-orange-500 to-yellow-500 px-2 py-1 rounded-md text-white font-semibold">truck driver</span>, or someone from a completely non-IT background 
                   can transform their career into a successful IT Professional. Our six-month, live training program is designed 
                   to take you from absolute beginner to job-ready professional, with a clear focus on practical skills, 
                   industry tools, and career readiness.
