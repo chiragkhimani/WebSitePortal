@@ -318,7 +318,7 @@ const App = () => {
             </Badge>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
-            The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp <span className="text-green-400">with AI Tools</span>
+            The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">with AI Tools</span>
           </h1>
           <p className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold italic handwritten">
             A journey from Aspirant to Achievements
