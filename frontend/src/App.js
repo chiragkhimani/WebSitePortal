@@ -1009,7 +1009,7 @@ const App = () => {
                           value={enrollmentForm.phone_number}
                           onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('phone_number')(e.target.value)}
                           required
-                          className="bg-slate-700 border-slate-600 text-white"
+                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
                           placeholder="+1234567890"
                         />
                       </div>
