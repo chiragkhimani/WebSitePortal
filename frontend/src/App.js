@@ -1019,7 +1019,7 @@ const App = () => {
                       <div>
                         <Label htmlFor="experience" className="text-white">Experience Level *</Label>
                         <Select value={enrollmentForm.experience_level} onValueChange={(value) => handleInputChange(enrollmentForm, setEnrollmentForm)('experience_level')(value)}>
-                          <SelectTrigger className="bg-slate-700 border-slate-600 text-white">
+                          <SelectTrigger className="bg-slate-700 border-slate-600 text-white h-12 text-lg">
                             <SelectValue placeholder="Select your experience level" />
                           </SelectTrigger>
                           <SelectContent className="bg-slate-800 border-slate-600">
