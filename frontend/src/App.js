@@ -1108,7 +1108,7 @@ const App = () => {
                           <Button 
                             type="submit" 
                             disabled={isSubmitting}
-                            className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-6 text-2xl font-bold rounded-xl shadow-2xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-4 text-xl font-bold rounded-lg shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                           >
                             {isSubmitting ? (
                               <div className="flex items-center justify-center">
