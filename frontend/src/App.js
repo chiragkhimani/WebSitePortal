@@ -1148,52 +1148,75 @@ const App = () => {
                       </div>
                     </CardHeader>
                     <CardContent className="px-10 pb-10">
-                  <form onSubmit={handleContactSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="contact-name" className="text-white">Name *</Label>
-                        <Input
-                          id="contact-name"
-                          value={contactForm.name}
-                          onChange={(e) => handleInputChange(contactForm, setContactForm)('name')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="contact-email" className="text-white">Email *</Label>
-                        <Input
-                          id="contact-email"
-                          type="email"
-                          value={contactForm.email}
-                          onChange={(e) => handleInputChange(contactForm, setContactForm)('email')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                        />
-                      </div>
-                    </div>
+                      <form onSubmit={handleContactSubmit} className="space-y-8">
+                        <div className="grid md:grid-cols-2 gap-8">
+                          <div className="space-y-2">
+                            <Label htmlFor="contact-name" className="text-white text-lg font-semibold flex items-center">
+                              <Users className="h-5 w-5 mr-2 text-purple-400" />
+                              Your Name *
+                            </Label>
+                            <Input
+                              id="contact-name"
+                              value={contactForm.name}
+                              onChange={(e) => handleInputChange(contactForm, setContactForm)('name')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
+                              placeholder="Enter your full name"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="contact-email" className="text-white text-lg font-semibold flex items-center">
+                              <MessageCircle className="h-5 w-5 mr-2 text-pink-400" />
+                              Email Address *
+                            </Label>
+                            <Input
+                              id="contact-email"
+                              type="email"
+                              value={contactForm.email}
+                              onChange={(e) => handleInputChange(contactForm, setContactForm)('email')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200"
+                              placeholder="Enter your email address"
+                            />
+                          </div>
+                        </div>
 
-                    <div>
-                      <Label htmlFor="message" className="text-white">Message *</Label>
-                      <Textarea
-                        id="message"
-                        value={contactForm.message}
-                        onChange={(e) => handleInputChange(contactForm, setContactForm)('message')(e.target.value)}
-                        required
-                        rows={5}
-                        className="bg-slate-700 border-slate-600 text-white text-lg"
-                        placeholder="Tell us about your questions or requirements..."
-                      />
-                    </div>
+                        <div className="space-y-2">
+                          <Label htmlFor="message" className="text-white text-lg font-semibold flex items-center">
+                            <MessageCircle className="h-5 w-5 mr-2 text-yellow-400" />
+                            Your Message *
+                          </Label>
+                          <Textarea
+                            id="message"
+                            value={contactForm.message}
+                            onChange={(e) => handleInputChange(contactForm, setContactForm)('message')(e.target.value)}
+                            required
+                            rows={6}
+                            className="bg-slate-700/80 border-slate-500 text-white text-lg rounded-xl focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 resize-none"
+                            placeholder="Tell us about your questions, career goals, or any specific requirements you have for the SDET program..."
+                          />
+                        </div>
 
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-4 text-xl font-semibold"
-                    >
-                      {isSubmitting ? 'Sending...' : 'Send Message'}
-                    </Button>
-                  </form>
+                        <div className="pt-4">
+                          <Button 
+                            type="submit" 
+                            disabled={isSubmitting}
+                            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-6 text-2xl font-bold rounded-xl shadow-2xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                          >
+                            {isSubmitting ? (
+                              <div className="flex items-center justify-center">
+                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-3"></div>
+                                Sending Your Message...
+                              </div>
+                            ) : (
+                              <div className="flex items-center justify-center">
+                                <MessageCircle className="h-7 w-7 mr-3" />
+                                Send My Message
+                              </div>
+                            )}
+                          </Button>
+                        </div>
+                      </form>
                 </CardContent>
               </Card>
             </TabsContent>
