@@ -304,11 +304,11 @@ const App = () => {
             API testing, AI Tools, and land your dream job at top tech companies.
           </p>
           
-          <div className="mb-16 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 text-xl font-bold shadow-lg">
+          <div className="mb-16 flex flex-col sm:flex-row gap-3 justify-center items-center">
+            <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-4 py-2 text-sm font-semibold shadow-lg rounded-full">
               🚀 From Zero to IT Professional in 6 Months
             </Badge>
-            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 text-xl font-bold shadow-lg">
+            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 text-sm font-semibold shadow-lg rounded-full">
               ✨ Now with AI Tools
             </Badge>
           </div>
