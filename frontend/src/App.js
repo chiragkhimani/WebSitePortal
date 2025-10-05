@@ -1217,7 +1217,9 @@ const App = () => {
                           </Button>
                         </div>
                       </form>
-                </CardContent>
+                    </CardContent>
+                  </div>
+                </div>
               </Card>
             </TabsContent>
           </Tabs>
