@@ -202,9 +202,9 @@ const App = () => {
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg p-2">
-                <Code className="h-6 w-6 text-white" />
+                <GraduationCap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-white font-bold text-xl">SDET Bootcamp</span>
+              <span className="text-white font-bold text-xl">Chirag Khimani</span>
             </div>
 
             {/* Desktop Navigation */}
