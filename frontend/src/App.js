@@ -293,19 +293,17 @@ const App = () => {
       <section className="relative overflow-hidden py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
         <div className="relative max-w-7xl mx-auto text-center">
-          <div className="mb-8">
-            <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-lg font-semibold">
+          <div className="mb-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-lg font-semibold">
               🚀 From Zero to IT Professional in 6 Months
+            </Badge>
+            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 text-lg font-semibold">
+              ✨ Now with AI Tools
             </Badge>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
             The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp
           </h1>
-          <div className="flex justify-center mb-6">
-            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-3 text-xl font-bold shadow-lg">
-              ✨ Now with AI Tools
-            </Badge>
-          </div>
           <div className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold italic text-center">
             <span className="typewriter">A journey from Aspirant to Achievements</span>
           </div>
