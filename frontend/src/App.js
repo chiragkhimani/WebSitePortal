@@ -978,15 +978,24 @@ const App = () => {
               </TabsTrigger>
             </TabsList>
 
-            <TabsContent value="enrollment">
-              <Card className="bg-slate-800/50 border-slate-600 backdrop-blur-sm">
-                <CardHeader>
-                  <CardTitle className="text-2xl text-white">Course Enrollment Form</CardTitle>
-                  <CardDescription className="text-gray-300">
-                    Fill out the form below and our team will contact you within 24 hours
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
+            <TabsContent value="enrollment" className="mt-8">
+              <Card className="bg-gradient-to-br from-slate-800/60 to-slate-700/60 border-slate-600 backdrop-blur-sm shadow-2xl rounded-3xl overflow-hidden">
+                <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-1">
+                  <div className="bg-slate-800/80 rounded-3xl">
+                    <CardHeader className="pb-8 pt-10 px-10">
+                      <div className="text-center mb-6">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-4 shadow-lg">
+                          <BookOpen className="h-8 w-8 text-white" />
+                        </div>
+                        <CardTitle className="text-4xl text-white mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                          Course Enrollment Form
+                        </CardTitle>
+                        <CardDescription className="text-gray-300 text-xl leading-relaxed">
+                          Fill out the form below and our expert team will contact you within 24 hours to guide you through your SDET journey
+                        </CardDescription>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="px-10 pb-10">
                   {submitStatus && (
                     <Alert className={`mb-6 ${submitStatus.type === 'success' ? 'border-green-500' : 'border-red-500'}`}>
                       <AlertCircle className="h-4 w-4" />
