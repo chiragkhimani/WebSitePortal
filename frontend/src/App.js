@@ -1096,7 +1096,7 @@ const App = () => {
                         onChange={(e) => handleInputChange(contactForm, setContactForm)('message')(e.target.value)}
                         required
                         rows={5}
-                        className="bg-slate-700 border-slate-600 text-white"
+                        className="bg-slate-700 border-slate-600 text-white text-lg"
                         placeholder="Tell us about your questions or requirements..."
                       />
                     </div>
