@@ -727,8 +727,8 @@ const App = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-400 mb-4">All plans include 24/7 support and lifetime access to course materials</p>
-            <div className="flex justify-center space-x-6 text-sm text-gray-500">
+            <p className="text-gray-300 mb-4 text-lg font-semibold">All plans include 24/7 support and lifetime access to course materials</p>
+            <div className="flex justify-center space-x-6 text-sm text-gray-400">
               <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Money Back Guarantee</span>
               <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Flexible Payment Options</span>
               <span className="flex items-center"><CheckCircle className="w-4 h-4 text-green-400 mr-2" />Career Support</span>
