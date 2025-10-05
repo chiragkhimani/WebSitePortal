@@ -595,7 +595,7 @@ const App = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
+      <section id="pricing-section" className="py-24 px-4 bg-gradient-to-r from-slate-800/50 to-purple-800/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl font-bold text-white mb-6">Pricing Plans</h2>
