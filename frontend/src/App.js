@@ -142,7 +142,7 @@ const App = () => {
 
   const stats = [
     { icon: Users, label: 'Students Trained', value: '5,000+' },
-    { icon: Trophy, label: 'Highest Package Offered', value: '₹18L' },
+    { icon: Trophy, label: 'Highest Package Offered', value: '$180k' },
     { icon: Star, label: 'Industry Rating', value: '4.9/5' },
     { icon: Target, label: 'Job Placement', value: '85%' }
   ];
