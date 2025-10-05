@@ -764,79 +764,78 @@ const App = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-            <div className="space-y-6">
-              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm">
+          <div className="grid lg:grid-cols-3 gap-8 mb-16 items-start">
+            {/* Mission Section */}
+            <div className="lg:col-span-2">
+              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm h-full">
                 <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
                 <p className="text-gray-300 text-lg leading-relaxed mb-6">
                   Our mission is simple: to bridge the gap between non-IT backgrounds and high-demand IT careers. 
                   If you're motivated to change your career, we'll guide you every step of the way.
                 </p>
-                <p className="text-gray-300 text-lg leading-relaxed">
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">
                   We believe anyone, whether a <span className="bg-gradient-to-r from-pink-500 to-rose-500 px-2 py-1 rounded-md text-white font-semibold">housewife</span>, <span className="bg-gradient-to-r from-blue-500 to-cyan-500 px-2 py-1 rounded-md text-white font-semibold">nurse</span>, <span className="bg-gradient-to-r from-orange-500 to-yellow-500 px-2 py-1 rounded-md text-white font-semibold">truck driver</span>, or someone from a completely non-IT background 
                   can transform their career into a successful IT Professional. Our six-month, live training program is designed 
                   to take you from absolute beginner to job-ready professional, with a clear focus on practical skills, 
                   industry tools, and career readiness.
                 </p>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm">
-                <div className="mb-6">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
-                    alt="Chirag Khimani - SDET Trainer" 
-                    className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-2xl"
-                  />
-                </div>
-                <h4 className="text-2xl font-bold text-white mb-2">Chirag Khimani</h4>
-                <p className="text-blue-400 font-semibold mb-4">SDET Trainer & QA Automation Consultant</p>
-                <div className="space-y-4 text-gray-300">
-                  <p className="text-sm mb-6 font-semibold text-center">Author of Java Books:</p>
-                  <div className="flex justify-center space-x-8">
+                
+                {/* Integrated Book Section */}
+                <div className="border-t border-slate-600 pt-6">
+                  <h4 className="text-xl font-bold text-white mb-4">Resources by Our Expert</h4>
+                  <p className="text-gray-400 text-sm mb-4">Chirag has authored comprehensive Java learning resources:</p>
+                  <div className="flex space-x-6">
                     <a 
                       href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group transition-all duration-300 transform hover:scale-110"
+                      className="group flex items-center space-x-3 bg-gradient-to-r from-blue-500/5 to-purple-500/5 hover:from-blue-500/10 hover:to-purple-500/10 rounded-lg p-3 transition-all duration-300 border border-blue-500/20 hover:border-blue-500/40"
                     >
-                      <div className="text-center">
-                        <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-xl p-4 hover:from-blue-500/20 hover:to-purple-500/20 transition-colors duration-300 border border-blue-500/20">
-                          <img 
-                            src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/rthy7m5k_Revision_Book-removebg-preview.png"
-                            alt="Java Revision Notes Book Cover"
-                            className="w-20 h-28 object-contain mx-auto mb-3 drop-shadow-lg"
-                          />
-                          <p className="text-xs font-semibold text-blue-400 group-hover:text-blue-300">
-                            Java Revision Notes
-                          </p>
-                          <p className="text-xs text-gray-400">Color Coded</p>
-                        </div>
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/rthy7m5k_Revision_Book-removebg-preview.png"
+                        alt="Java Revision Notes"
+                        className="w-12 h-16 object-contain drop-shadow-md"
+                      />
+                      <div>
+                        <p className="text-blue-400 font-semibold text-sm group-hover:text-blue-300">Java Revision Notes</p>
+                        <p className="text-gray-400 text-xs">Color Coded Edition</p>
                       </div>
                     </a>
+                    
                     <a 
                       href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group transition-all duration-300 transform hover:scale-110"
+                      className="group flex items-center space-x-3 bg-gradient-to-r from-purple-500/5 to-pink-500/5 hover:from-purple-500/10 hover:to-pink-500/10 rounded-lg p-3 transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40"
                     >
-                      <div className="text-center">
-                        <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 rounded-xl p-4 hover:from-purple-500/20 hover:to-pink-500/20 transition-colors duration-300 border border-purple-500/20">
-                          <img 
-                            src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/d1zetxjs_coding_book-removebg-preview.png"
-                            alt="Java Coding Programs Book Cover"
-                            className="w-20 h-28 object-contain mx-auto mb-3 drop-shadow-lg"
-                          />
-                          <p className="text-xs font-semibold text-purple-400 group-hover:text-purple-300">
-                            Java Coding Programs
-                          </p>
-                          <p className="text-xs text-gray-400">Color Coded</p>
-                        </div>
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/d1zetxjs_coding_book-removebg-preview.png"
+                        alt="Java Coding Programs"
+                        className="w-12 h-16 object-contain drop-shadow-md"
+                      />
+                      <div>
+                        <p className="text-purple-400 font-semibold text-sm group-hover:text-purple-300">Java Coding Programs</p>
+                        <p className="text-gray-400 text-xs">Color Coded Edition</p>
                       </div>
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Author Profile Section */}
+            <div>
+              <div className="bg-slate-800/50 rounded-2xl p-6 border border-slate-600 backdrop-blur-sm text-center">
+                <div className="mb-6">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/tyg6kcg4_Author%20Image.JPG" 
+                    alt="Chirag Khimani - SDET Trainer" 
+                    className="w-36 h-36 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-2xl"
+                  />
+                </div>
+                <h4 className="text-xl font-bold text-white mb-2">Chirag Khimani</h4>
+                <p className="text-blue-400 font-semibold mb-2 text-sm">SDET Trainer & QA Automation Consultant</p>
+                <p className="text-gray-400 text-xs">Author • Mentor • Industry Expert</p>
               </div>
             </div>
           </div>
