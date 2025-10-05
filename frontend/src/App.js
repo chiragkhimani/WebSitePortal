@@ -926,22 +926,55 @@ const App = () => {
       </section>
 
       {/* Enrollment Section */}
-      <section id="enrollment-section" className="py-24 px-4">
-        <div className="max-w-4xl mx-auto">
+      <section id="enrollment-section" className="py-24 px-4 bg-gradient-to-br from-slate-900/50 to-blue-900/30">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-5xl font-bold text-white mb-6">Ready to Start Your SDET Journey?</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            <div className="mb-8">
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6 shadow-2xl">
+                <PlayCircle className="h-10 w-10 text-white" />
+              </div>
+            </div>
+            <h2 className="text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Ready to Start Your SDET Journey?
+            </h2>
+            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Join thousands of successful graduates and transform your career in software testing and automation
             </p>
+            <div className="flex justify-center space-x-8 text-lg text-gray-400">
+              <div className="flex items-center">
+                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <span>Free Consultation</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <span>Quick Response</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <span>Expert Guidance</span>
+              </div>
+            </div>
           </div>
 
           <Tabs defaultValue="enrollment" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 bg-slate-800 border-slate-600">
-              <TabsTrigger value="enrollment" className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500">
-                Course Enrollment
+            <TabsList className="grid w-full grid-cols-2 bg-gradient-to-r from-slate-800/50 to-slate-700/50 border border-slate-600 rounded-2xl p-2 backdrop-blur-sm">
+              <TabsTrigger 
+                value="enrollment" 
+                className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500 data-[state=active]:shadow-lg py-4 px-8 text-xl font-bold rounded-xl transition-all duration-300 data-[state=active]:scale-105"
+              >
+                <div className="flex items-center space-x-2">
+                  <BookOpen className="h-6 w-6" />
+                  <span>Course Enrollment</span>
+                </div>
               </TabsTrigger>
-              <TabsTrigger value="contact" className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500">
-                Contact Us
+              <TabsTrigger 
+                value="contact" 
+                className="text-white data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-pink-500 data-[state=active]:shadow-lg py-4 px-8 text-xl font-bold rounded-xl transition-all duration-300 data-[state=active]:scale-105"
+              >
+                <div className="flex items-center space-x-2">
+                  <MessageCircle className="h-6 w-6" />
+                  <span>Contact Us</span>
+                </div>
               </TabsTrigger>
             </TabsList>
 
