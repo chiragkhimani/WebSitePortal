@@ -293,14 +293,6 @@ const App = () => {
       <section className="relative overflow-hidden py-24 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
         <div className="relative max-w-7xl mx-auto text-center">
-          <div className="mb-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-lg font-semibold">
-              🚀 From Zero to IT Professional in 6 Months
-            </Badge>
-            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 text-lg font-semibold">
-              ✨ Now with AI Tools
-            </Badge>
-          </div>
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
             The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp
           </h1>
@@ -312,24 +304,13 @@ const App = () => {
             API testing, AI Tools, and land your dream job at top tech companies.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
-              onClick={() => document.getElementById('enrollment-section')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <PlayCircle className="mr-2 h-5 w-5" />
-              Start Your Journey Today
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
-              onClick={() => document.getElementById('courses-section')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              <BookOpen className="mr-2 h-5 w-5" />
-              Explore Details
-            </Button>
+          <div className="mb-16 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Badge className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-4 text-xl font-bold shadow-lg">
+              🚀 From Zero to IT Professional in 6 Months
+            </Badge>
+            <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 text-xl font-bold shadow-lg">
+              ✨ Now with AI Tools
+            </Badge>
           </div>
 
           {/* Stats */}
