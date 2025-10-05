@@ -141,8 +141,8 @@ const App = () => {
   };
 
   const stats = [
-    { icon: Users, label: 'Students Trained', value: '10,000+' },
-    { icon: Trophy, label: 'Success Rate', value: '95%' },
+    { icon: Users, label: 'Students Trained', value: '5,000+' },
+    { icon: Trophy, label: 'Highest Package Offered', value: '₹18L' },
     { icon: Star, label: 'Industry Rating', value: '4.9/5' },
     { icon: Target, label: 'Job Placement', value: '85%' }
   ];
