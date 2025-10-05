@@ -1045,7 +1045,7 @@ const App = () => {
                     <Button 
                       type="submit" 
                       disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-3 text-lg"
+                      className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-4 text-xl font-semibold"
                     >
                       {isSubmitting ? 'Submitting...' : 'Submit Enrollment'}
                     </Button>
