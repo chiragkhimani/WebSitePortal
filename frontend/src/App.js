@@ -233,15 +233,6 @@ const App = () => {
               >
                 About Us
               </button>
-              <a
-                href="https://wa.link/vmiqhs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full transition-all duration-200 transform hover:scale-110 mr-4"
-                title="WhatsApp"
-              >
-                <MessageCircle className="h-5 w-5" />
-              </a>
               <button
                 onClick={() => scrollToSection('enrollment-section')}
                 className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-200 transform hover:scale-105"
