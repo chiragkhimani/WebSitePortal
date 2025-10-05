@@ -972,7 +972,7 @@ const App = () => {
                           value={enrollmentForm.name}
                           onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('name')(e.target.value)}
                           required
-                          className="bg-slate-700 border-slate-600 text-white"
+                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
                           placeholder="Enter your full name"
                         />
                       </div>
