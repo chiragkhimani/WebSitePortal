@@ -1148,7 +1148,7 @@ const App = () => {
                       </div>
                     </CardHeader>
                     <CardContent className="px-8 pb-8">
-                      <form onSubmit={handleContactSubmit} className="space-y-8">
+                      <form onSubmit={handleContactSubmit} className="space-y-6">
                         <div className="grid md:grid-cols-2 gap-8">
                           <div className="space-y-2">
                             <Label htmlFor="contact-name" className="text-white text-lg font-semibold flex items-center">
