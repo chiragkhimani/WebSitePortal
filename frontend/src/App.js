@@ -927,7 +927,7 @@ const App = () => {
 
       {/* Enrollment Section */}
       <section id="enrollment-section" className="py-24 px-4 bg-gradient-to-br from-slate-900/50 to-blue-900/30">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <div className="mb-8">
               <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6 shadow-2xl">
