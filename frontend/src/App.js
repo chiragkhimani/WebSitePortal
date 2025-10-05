@@ -1083,7 +1083,7 @@ const App = () => {
                           value={contactForm.email}
                           onChange={(e) => handleInputChange(contactForm, setContactForm)('email')(e.target.value)}
                           required
-                          className="bg-slate-700 border-slate-600 text-white"
+                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
                         />
                       </div>
                     </div>
