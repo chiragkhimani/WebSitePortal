@@ -201,10 +201,10 @@ const App = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg p-2">
+              <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg p-2 shadow-lg">
                 <GraduationCap className="h-6 w-6 text-white" />
               </div>
-              <span className="text-white font-bold text-xl">Chirag Khimani</span>
+              <span className="text-white font-bold text-xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Chirag Khimani</span>
             </div>
 
             {/* Desktop Navigation */}
