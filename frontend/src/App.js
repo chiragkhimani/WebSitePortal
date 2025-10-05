@@ -776,22 +776,25 @@ const App = () => {
                 {/* Integrated Book Section */}
                 <div className="border-t border-slate-600 pt-6">
                   <h4 className="text-xl font-bold text-white mb-4">Resources by Our Expert</h4>
-                  <p className="text-gray-400 text-sm mb-4">Chirag has authored comprehensive Java learning resources:</p>
-                  <div className="flex space-x-6">
+                  <p className="text-gray-400 text-sm mb-6">Chirag has authored comprehensive Java learning resources:</p>
+                  <div className="grid md:grid-cols-2 gap-4">
                     <a 
                       href="https://www.amazon.com/Java-Revision-Notes-Color-Coded/dp/9357017798"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center space-x-3 bg-gradient-to-r from-blue-500/5 to-purple-500/5 hover:from-blue-500/10 hover:to-purple-500/10 rounded-lg p-3 transition-all duration-300 border border-blue-500/20 hover:border-blue-500/40"
+                      className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl p-4 transition-all duration-300 border border-slate-600/50 hover:border-blue-500/50 transform hover:scale-105"
                     >
-                      <img 
-                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/rthy7m5k_Revision_Book-removebg-preview.png"
-                        alt="Java Revision Notes"
-                        className="w-12 h-16 object-contain drop-shadow-md"
-                      />
-                      <div>
-                        <p className="text-blue-400 font-semibold text-sm group-hover:text-blue-300">Java Revision Notes</p>
-                        <p className="text-gray-400 text-xs">Color Coded Edition</p>
+                      <div className="flex items-start space-x-4">
+                        <img 
+                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/rthy7m5k_Revision_Book-removebg-preview.png"
+                          alt="Java Revision Notes"
+                          className="w-14 h-18 object-contain drop-shadow-lg flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h5 className="text-blue-400 font-bold text-sm group-hover:text-blue-300 mb-1">Java Revision Notes</h5>
+                          <p className="text-gray-400 text-xs mb-2">Color Coded Edition</p>
+                          <p className="text-gray-300 text-xs leading-relaxed">Quick interview prep in hours, not weeks</p>
+                        </div>
                       </div>
                     </a>
                     
@@ -799,16 +802,19 @@ const App = () => {
                       href="https://www.amazon.com/Java-Coding-Programs-Chirag-Khimani/dp/936013662X"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group flex items-center space-x-3 bg-gradient-to-r from-purple-500/5 to-pink-500/5 hover:from-purple-500/10 hover:to-pink-500/10 rounded-lg p-3 transition-all duration-300 border border-purple-500/20 hover:border-purple-500/40"
+                      className="group bg-gradient-to-br from-slate-700/30 to-slate-800/30 hover:from-slate-600/40 hover:to-slate-700/40 rounded-xl p-4 transition-all duration-300 border border-slate-600/50 hover:border-purple-500/50 transform hover:scale-105"
                     >
-                      <img 
-                        src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/d1zetxjs_coding_book-removebg-preview.png"
-                        alt="Java Coding Programs"
-                        className="w-12 h-16 object-contain drop-shadow-md"
-                      />
-                      <div>
-                        <p className="text-purple-400 font-semibold text-sm group-hover:text-purple-300">Java Coding Programs</p>
-                        <p className="text-gray-400 text-xs">Color Coded Edition</p>
+                      <div className="flex items-start space-x-4">
+                        <img 
+                          src="https://customer-assets.emergentagent.com/job_sdet-sheet-connect/artifacts/d1zetxjs_coding_book-removebg-preview.png"
+                          alt="Java Coding Programs"
+                          className="w-14 h-18 object-contain drop-shadow-lg flex-shrink-0"
+                        />
+                        <div className="flex-1">
+                          <h5 className="text-purple-400 font-bold text-sm group-hover:text-purple-300 mb-1">Java Coding Programs</h5>
+                          <p className="text-gray-400 text-xs mb-2">Color Coded Edition</p>
+                          <p className="text-gray-300 text-xs leading-relaxed">Build problem-solving mindset</p>
+                        </div>
                       </div>
                     </a>
                   </div>
