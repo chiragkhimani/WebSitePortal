@@ -1108,7 +1108,7 @@ const App = () => {
           <h3 className="text-3xl font-bold text-white mb-4">SDET Mastery Program</h3>
           <p className="text-gray-400 mb-8">Transforming careers through comprehensive software testing education</p>
           <div className="text-sm text-gray-500">
-            © 2024 SDET Training Program. All rights reserved.
+            Copyright © 2025 Chirag Khimani | All Rights Reserved.
           </div>
         </div>
       </footer>
