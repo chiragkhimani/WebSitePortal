@@ -769,15 +769,8 @@ const App = () => {
             <div className="lg:col-span-2">
               <div className="bg-slate-800/50 rounded-2xl p-8 border border-slate-600 backdrop-blur-sm h-full">
                 <h3 className="text-3xl font-bold text-white mb-6">Our Mission</h3>
-                <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                  Our mission is simple: to bridge the gap between non-IT backgrounds and high-demand IT careers. 
-                  If you're motivated to change your career, we'll guide you every step of the way.
-                </p>
-                <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                  We believe anyone, whether a <span className="bg-gradient-to-r from-pink-500 to-rose-500 px-2 py-1 rounded-md text-white font-semibold">housewife</span>, <span className="bg-gradient-to-r from-blue-500 to-cyan-500 px-2 py-1 rounded-md text-white font-semibold">nurse</span>, <span className="bg-gradient-to-r from-orange-500 to-yellow-500 px-2 py-1 rounded-md text-white font-semibold">truck driver</span>, or someone from a completely non-IT background 
-                  can transform their career into a successful IT Professional. Our six-month, live training program is designed 
-                  to take you from absolute beginner to job-ready professional, with a clear focus on practical skills, 
-                  industry tools, and career readiness.
+                <p className="text-gray-300 text-xl leading-relaxed mb-8">
+                  We bridge the gap between non-IT backgrounds and high-demand IT careers. Whether you're a <span className="text-pink-400 font-bold">housewife</span>, <span className="text-blue-400 font-bold">nurse</span>, or <span className="text-orange-400 font-bold">truck driver</span>, you can become an IT professional in just <span className="text-purple-400 font-bold">6 months</span>.
                 </p>
                 
                 {/* Integrated Book Section */}
