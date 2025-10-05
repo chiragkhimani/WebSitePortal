@@ -1005,93 +1005,125 @@ const App = () => {
                     </Alert>
                   )}
                   
-                  <form onSubmit={handleEnrollmentSubmit} className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="name" className="text-white">Full Name *</Label>
-                        <Input
-                          id="name"
-                          value={enrollmentForm.name}
-                          onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('name')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                          placeholder="Enter your full name"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="email" className="text-white">Email Address *</Label>
-                        <Input
-                          id="email"
-                          type="email"
-                          value={enrollmentForm.email}
-                          onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('email')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                          placeholder="Enter your email"
-                        />
-                      </div>
-                    </div>
+                      <form onSubmit={handleEnrollmentSubmit} className="space-y-8">
+                        <div className="grid md:grid-cols-2 gap-8">
+                          <div className="space-y-2">
+                            <Label htmlFor="name" className="text-white text-lg font-semibold flex items-center">
+                              <Users className="h-5 w-5 mr-2 text-blue-400" />
+                              Full Name *
+                            </Label>
+                            <Input
+                              id="name"
+                              value={enrollmentForm.name}
+                              onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('name')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
+                              placeholder="Enter your full name"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="email" className="text-white text-lg font-semibold flex items-center">
+                              <MessageCircle className="h-5 w-5 mr-2 text-purple-400" />
+                              Email Address *
+                            </Label>
+                            <Input
+                              id="email"
+                              type="email"
+                              value={enrollmentForm.email}
+                              onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('email')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
+                              placeholder="Enter your email address"
+                            />
+                          </div>
+                        </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="country" className="text-white">Country *</Label>
-                        <Input
-                          id="country"
-                          value={enrollmentForm.country}
-                          onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('country')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                          placeholder="Enter your country"
-                        />
-                      </div>
-                      <div>
-                        <Label htmlFor="phone" className="text-white">Phone Number *</Label>
-                        <Input
-                          id="phone"
-                          value={enrollmentForm.phone_number}
-                          onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('phone_number')(e.target.value)}
-                          required
-                          className="bg-slate-700 border-slate-600 text-white h-12 text-lg"
-                          placeholder="+1234567890"
-                        />
-                      </div>
-                    </div>
+                        <div className="grid md:grid-cols-2 gap-8">
+                          <div className="space-y-2">
+                            <Label htmlFor="country" className="text-white text-lg font-semibold flex items-center">
+                              <Target className="h-5 w-5 mr-2 text-green-400" />
+                              Country *
+                            </Label>
+                            <Input
+                              id="country"
+                              value={enrollmentForm.country}
+                              onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('country')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
+                              placeholder="Enter your country"
+                            />
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="phone" className="text-white text-lg font-semibold flex items-center">
+                              <MessageCircle className="h-5 w-5 mr-2 text-yellow-400" />
+                              Phone Number *
+                            </Label>
+                            <Input
+                              id="phone"
+                              value={enrollmentForm.phone_number}
+                              onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('phone_number')(e.target.value)}
+                              required
+                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
+                              placeholder="+1 (555) 123-4567"
+                            />
+                          </div>
+                        </div>
 
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div>
-                        <Label htmlFor="experience" className="text-white">Experience Level *</Label>
-                        <Select value={enrollmentForm.experience_level} onValueChange={(value) => handleInputChange(enrollmentForm, setEnrollmentForm)('experience_level')(value)}>
-                          <SelectTrigger className="bg-slate-700 border-slate-600 text-white h-12 text-lg">
-                            <SelectValue placeholder="Select your experience level" />
-                          </SelectTrigger>
-                          <SelectContent className="bg-slate-800 border-slate-600">
-                            <SelectItem value="Beginner">Beginner</SelectItem>
-                            <SelectItem value="Intermediate">Intermediate</SelectItem>
-                            <SelectItem value="Advanced">Advanced</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div>
-                        <Label htmlFor="course" className="text-white">Course Interest *</Label>
-                        <Input
-                          id="course"
-                          value="SDET Bootcamp"
-                          readOnly
-                          className="bg-slate-700 border-slate-600 text-white cursor-not-allowed h-12 text-lg"
-                          placeholder="SDET Bootcamp"
-                        />
-                        <input type="hidden" name="course_interest" value="SDET Bootcamp" />
-                      </div>
-                    </div>
+                        <div className="grid md:grid-cols-2 gap-8">
+                          <div className="space-y-2">
+                            <Label htmlFor="experience" className="text-white text-lg font-semibold flex items-center">
+                              <Star className="h-5 w-5 mr-2 text-orange-400" />
+                              Experience Level *
+                            </Label>
+                            <Select value={enrollmentForm.experience_level} onValueChange={(value) => handleInputChange(enrollmentForm, setEnrollmentForm)('experience_level')(value)}>
+                              <SelectTrigger className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20">
+                                <SelectValue placeholder="Select your experience level" />
+                              </SelectTrigger>
+                              <SelectContent className="bg-slate-800 border-slate-600 rounded-xl">
+                                <SelectItem value="Beginner">Beginner (No Experience)</SelectItem>
+                                <SelectItem value="Intermediate">Intermediate (Some Experience)</SelectItem>
+                                <SelectItem value="Advanced">Advanced (Experienced)</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </div>
+                          <div className="space-y-2">
+                            <Label htmlFor="course" className="text-white text-lg font-semibold flex items-center">
+                              <BookOpen className="h-5 w-5 mr-2 text-pink-400" />
+                              Course Program *
+                            </Label>
+                            <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 p-1 rounded-xl">
+                              <Input
+                                id="course"
+                                value="SDET Bootcamp Program"
+                                readOnly
+                                className="bg-slate-700/80 border-slate-500 text-white cursor-not-allowed h-12 text-lg rounded-lg"
+                                placeholder="SDET Bootcamp Program"
+                              />
+                            </div>
+                            <input type="hidden" name="course_interest" value="SDET Bootcamp" />
+                          </div>
+                        </div>
 
-                    <Button 
-                      type="submit" 
-                      disabled={isSubmitting}
-                      className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-4 text-xl font-semibold"
-                    >
-                      {isSubmitting ? 'Submitting...' : 'Submit Enrollment'}
-                    </Button>
-                  </form>
+                        <div className="pt-4">
+                          <Button 
+                            type="submit" 
+                            disabled={isSubmitting}
+                            className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-6 text-2xl font-bold rounded-xl shadow-2xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                          >
+                            {isSubmitting ? (
+                              <div className="flex items-center justify-center">
+                                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white mr-3"></div>
+                                Submitting Your Application...
+                              </div>
+                            ) : (
+                              <div className="flex items-center justify-center">
+                                <PlayCircle className="h-7 w-7 mr-3" />
+                                Submit My Enrollment Application
+                              </div>
+                            )}
+                          </Button>
+                        </div>
+                      </form>
                     </CardContent>
                   </div>
                 </div>
