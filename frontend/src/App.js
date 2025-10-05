@@ -1035,7 +1035,7 @@ const App = () => {
                           id="course"
                           value="SDET Bootcamp"
                           readOnly
-                          className="bg-slate-700 border-slate-600 text-white cursor-not-allowed"
+                          className="bg-slate-700 border-slate-600 text-white cursor-not-allowed h-12 text-lg"
                           placeholder="SDET Bootcamp"
                         />
                         <input type="hidden" name="course_interest" value="SDET Bootcamp" />
