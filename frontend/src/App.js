@@ -299,14 +299,14 @@ const App = () => {
             </Badge>
           </div>
           <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
-            The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp
+            The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp <span className="text-green-400">with AI Tools</span>
           </h1>
-          <p className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold">
+          <p className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold italic animate-pulse" style={{fontFamily: 'Brush Script MT, cursive'}}>
             A journey from Aspirant to Achievements
           </p>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Transform your career with our comprehensive SDET program. Learn cutting-edge automation frameworks, 
-            API testing, mobile testing, and land your dream job at top tech companies.
+            API testing, AI Tools, and land your dream job at top tech companies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
