@@ -1006,10 +1006,10 @@ const App = () => {
                   )}
                   
                       <form onSubmit={handleEnrollmentSubmit} className="space-y-8">
-                        <div className="grid md:grid-cols-2 gap-8">
+                        <div className="grid md:grid-cols-2 gap-6">
                           <div className="space-y-2">
-                            <Label htmlFor="name" className="text-white text-lg font-semibold flex items-center">
-                              <Users className="h-5 w-5 mr-2 text-blue-400" />
+                            <Label htmlFor="name" className="text-white text-base font-semibold flex items-center">
+                              <Users className="h-4 w-4 mr-2 text-blue-400" />
                               Full Name *
                             </Label>
                             <Input
@@ -1017,7 +1017,7 @@ const App = () => {
                               value={enrollmentForm.name}
                               onChange={(e) => handleInputChange(enrollmentForm, setEnrollmentForm)('name')(e.target.value)}
                               required
-                              className="bg-slate-700/80 border-slate-500 text-white h-14 text-lg rounded-xl focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
+                              className="bg-slate-700/80 border-slate-500 text-white h-12 text-base rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all duration-200"
                               placeholder="Enter your full name"
                             />
                           </div>
