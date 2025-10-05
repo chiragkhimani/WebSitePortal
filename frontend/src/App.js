@@ -928,29 +928,29 @@ const App = () => {
       {/* Enrollment Section */}
       <section id="enrollment-section" className="py-24 px-4 bg-gradient-to-br from-slate-900/50 to-blue-900/30">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <div className="mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-6 shadow-2xl">
-                <PlayCircle className="h-10 w-10 text-white" />
+          <div className="text-center mb-12">
+            <div className="mb-6">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-4 shadow-2xl">
+                <PlayCircle className="h-8 w-8 text-white" />
               </div>
             </div>
-            <h2 className="text-6xl font-bold text-white mb-6 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            <h2 className="text-5xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
               Ready to Start Your SDET Journey?
             </h2>
-            <p className="text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-8">
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-6">
               Join thousands of successful graduates and transform your career in software testing and automation
             </p>
-            <div className="flex justify-center space-x-8 text-lg text-gray-400">
+            <div className="flex justify-center space-x-6 text-base text-gray-400">
               <div className="flex items-center">
-                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                 <span>Free Consultation</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                 <span>Quick Response</span>
               </div>
               <div className="flex items-center">
-                <CheckCircle className="w-6 h-6 text-green-400 mr-2" />
+                <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                 <span>Expert Guidance</span>
               </div>
             </div>
