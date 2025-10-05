@@ -174,70 +174,56 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-32 px-4 min-h-screen flex items-center">
-        {/* Background Image with Overlay */}
-        <div className="absolute inset-0">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: 'url(https://images.unsplash.com/photo-1607799279861-4dd421887fb3)',
-            }}
-          ></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-blue-900/80 to-purple-900/90"></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900/80"></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto text-center z-10">
+      <section className="relative overflow-hidden py-24 px-4">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        <div className="relative max-w-7xl mx-auto text-center">
           <div className="mb-8">
-            <Badge className="mb-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-8 py-3 text-lg font-bold shadow-2xl">
+            <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 text-lg font-semibold">
               🚀 #1 SDET Training Program
             </Badge>
           </div>
-          
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-            Become an SDET: Master <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Test Automation</span> with Real Projects
+          <h1 className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight">
+            The Ultimate <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Software Testing</span> & Automation Bootcamp
           </h1>
-          
-          <p className="text-2xl md:text-3xl lg:text-4xl text-blue-300 mb-12 font-semibold">
-            8-Week hands-on program | Mentorship | Job-ready portfolio
+          <p className="text-2xl md:text-3xl text-blue-300 mb-8 font-semibold">
+            A journey from Aspirant to Achievements
+          </p>
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+            Transform your career with our comprehensive SDET program. Learn cutting-edge automation frameworks, 
+            API testing, mobile testing, and land your dream job at top tech companies.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-12 py-6 text-xl font-bold rounded-full transition-all duration-300 transform hover:scale-110 shadow-2xl animate-pulse hover:animate-none"
+              className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg"
               onClick={() => document.getElementById('enrollment-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <PlayCircle className="mr-3 h-6 w-6" />
-              Register Now
+              <PlayCircle className="mr-2 h-5 w-5" />
+              Start Your Journey Today
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold rounded-full backdrop-blur-sm hover:border-white/50 transition-all duration-300"
+              className="border-2 border-white/20 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full backdrop-blur-sm"
               onClick={() => document.getElementById('courses-section')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <BookOpen className="mr-2 h-5 w-5" />
-              Learn More
+              Explore Details
             </Button>
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center backdrop-blur-md bg-white/10 rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:scale-105 shadow-xl">
-                <stat.icon className="h-10 w-10 text-blue-400 mx-auto mb-4" />
-                <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-gray-300 text-base font-medium">{stat.label}</div>
+              <div key={index} className="text-center backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10">
+                <stat.icon className="h-8 w-8 text-blue-400 mx-auto mb-3" />
+                <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                <div className="text-gray-300 text-sm">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
-
-        {/* Animated Elements */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-32 h-32 bg-purple-500/20 rounded-full blur-xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-orange-500/20 rounded-full blur-xl animate-pulse delay-500"></div>
       </section>
 
       {/* About Section */}
