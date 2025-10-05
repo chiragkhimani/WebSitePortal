@@ -182,21 +182,8 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-      {/* Top Notification Banner */}
-      <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 px-4 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20 animate-pulse"></div>
-        <div className="relative z-10 flex items-center justify-center space-x-2">
-          <Calendar className="h-5 w-5 animate-bounce" />
-          <span className="font-bold text-lg">Next Batch Starts 04 November 2025</span>
-          <div className="hidden sm:flex items-center ml-4 space-x-1">
-            <span className="animate-ping h-2 w-2 bg-white rounded-full"></span>
-            <span className="text-sm">Limited Seats Available!</span>
-          </div>
-        </div>
-      </div>
-
       {/* Header Navigation */}
-      <header className="bg-gradient-to-r from-slate-900/80 via-blue-900/70 to-purple-900/80 backdrop-blur-md border-b border-blue-500/20 sticky top-0 z-50 shadow-lg">
+      <header className="bg-gradient-to-r from-slate-900/80 via-blue-900/70 to-purple-900/80 backdrop-blur-md border-b border-blue-500/20 sticky top-0 z-50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
