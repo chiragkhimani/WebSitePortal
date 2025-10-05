@@ -279,8 +279,12 @@ img {
   0% {
     width: 0;
   }
+  99% {
+    border-color: #93c5fd;
+  }
   100% {
     width: 100%;
+    border-color: transparent;
   }
 }
 
@@ -297,9 +301,14 @@ img {
   overflow: hidden;
   border-right: 2px solid #93c5fd;
   white-space: nowrap;
-  animation: typewriter 3s steps(35) 1s forwards, cursor-blink 1s infinite;
+  animation: typewriter 3s steps(35) 1s forwards, cursor-blink 1s infinite 1s;
+  animation-fill-mode: forwards;
   width: 0;
   display: inline-block;
+}
+
+.typewriter.finished {
+  border-right: none;
 }
 
 /* Print styles */
