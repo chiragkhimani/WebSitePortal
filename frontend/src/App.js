@@ -707,6 +707,9 @@ const App = () => {
                   {pricingMode === 'onetime' && (
                     <p className="text-yellow-400 text-sm font-bold mt-2">Save $1,000 with Early Bird pricing!</p>
                   )}
+                  {pricingMode === 'monthly' && (
+                    <p className="text-yellow-400 text-sm font-bold mt-2">Save $600 total with Early Bird pricing!</p>
+                  )}
                 </div>
 
                 <Button className="w-full bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
