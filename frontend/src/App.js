@@ -957,7 +957,7 @@ const App = () => {
           </div>
 
           <Tabs defaultValue="enrollment" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 bg-gradient-to-r from-slate-800/60 to-slate-700/60 border border-slate-500/30 rounded-2xl p-2 backdrop-blur-md shadow-lg">
+            <TabsList className="grid w-full grid-cols-2 bg-gradient-to-r from-slate-800/60 to-slate-700/60 rounded-2xl p-2 backdrop-blur-md shadow-lg">
               <TabsTrigger 
                 value="enrollment" 
                 className="text-gray-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-500 data-[state=active]:to-purple-500 data-[state=active]:text-white data-[state=active]:shadow-lg py-4 px-6 text-lg font-semibold rounded-xl transition-all duration-300 hover:bg-slate-600/40 data-[state=active]:scale-[1.02]"
