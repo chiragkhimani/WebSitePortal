@@ -139,7 +139,8 @@ metadata:
   run_ui: true
 
 test_plan:
-  current_focus: []
+  current_focus:
+    - "Early Bird Pricing Feature"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
@@ -149,3 +150,5 @@ agent_communication:
     - message: "Successfully removed the extra border from TabsList styling in the enrollment form tabs. The background shape of Course Enrollment and Contact Us buttons now aligns better without the unwanted border. Ready for frontend testing to verify functionality is maintained."
     - agent: "testing"
     - message: "TabsList Styling Fix testing completed successfully! All functionality verified: ✅ Styling improvement confirmed (border removed) ✅ Tab switching working perfectly ✅ Form fields functional ✅ Mobile responsive ✅ Visual appearance improved. The change achieved the desired result - cleaner tab styling without any functional issues. Ready for main agent to summarize and finish the task."
+    - agent: "main"
+    - message: "Implemented new Early Bird pricing feature for SDET Bootcamp with 20% discount, gold/yellow styling accents, early bird badges and banners. Ready for comprehensive testing of pricing toggle functionality, visual elements, price verification, and responsiveness."
