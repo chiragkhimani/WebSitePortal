@@ -322,3 +322,57 @@ img {
     color: black !important;
   }
 }
+
+/* Early Bird Offer Animations */
+@keyframes early-bird-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(234, 179, 8, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.9);
+  }
+}
+
+.early-bird-glow {
+  animation: early-bird-glow 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05) rotate(-5deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: scale(1.15) rotate(3deg);
+    opacity: 0.7;
+  }
+}
+
+.early-bird-sparkle {
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+/* Early Bird Badge Pulse */
+@keyframes early-bird-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.early-bird-pulse {
+  animation: early-bird-pulse 2s ease-in-out infinite;
+}
