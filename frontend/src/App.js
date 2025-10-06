@@ -687,11 +687,11 @@ const App = () => {
                         {pricingMode === 'monthly' ? '$1,000' : '$5,000'}
                       </span>
                       <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-bounce">
-                        20% OFF
+                        {pricingMode === 'monthly' ? '$100 OFF' : '20% OFF'}
                       </div>
                     </div>
                     <div className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
-                      {pricingMode === 'monthly' ? '$800' : '$4,000'}
+                      {pricingMode === 'monthly' ? '$900' : '$4,000'}
                     </div>
                   </div>
                   
