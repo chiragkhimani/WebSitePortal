@@ -701,7 +701,7 @@ const App = () => {
                   {pricingMode === 'monthly' && (
                     <div className="mt-2 space-y-1">
                       <p className="text-gray-400 text-sm line-through">Regular Total: $6,000</p>
-                      <p className="text-yellow-400 text-sm font-bold">Early Bird Total: $4,800 (6-Month Program)</p>
+                      <p className="text-yellow-400 text-sm font-bold">Early Bird Total: $5,400 (6-Month Program)</p>
                     </div>
                   )}
                   {pricingMode === 'onetime' && (
