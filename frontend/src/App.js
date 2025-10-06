@@ -665,18 +665,47 @@ const App = () => {
                   MOST POPULAR
                 </Badge>
               </div>
+              {/* Early Bird Badge */}
+              <div className="absolute -top-4 right-4">
+                <Badge className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-4 py-2 text-xs font-bold animate-pulse shadow-lg">
+                  🐦 EARLY BIRD
+                </Badge>
+              </div>
+              {/* Early Bird Banner */}
+              <div className="absolute top-3 left-0 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-xs font-bold px-4 py-1 transform -rotate-3 shadow-lg">
+                20% OFF
+              </div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-lg"></div>
-              <CardContent className="p-8 relative z-10">
+              <CardContent className="p-8 relative z-10 pt-12">
                 <div className="text-center mb-8">
                   <h3 className="text-3xl font-bold text-white mb-4">SDET Bootcamp</h3>
-                  <div className="text-5xl font-bold text-white mb-2">
-                    {pricingMode === 'monthly' ? '$1,000' : '$5,000'}
+                  
+                  {/* Early Bird Pricing */}
+                  <div className="mb-4">
+                    <div className="flex justify-center items-center space-x-3 mb-2">
+                      <span className="text-3xl font-bold text-gray-400 line-through">
+                        {pricingMode === 'monthly' ? '$1,000' : '$5,000'}
+                      </span>
+                      <div className="bg-gradient-to-r from-yellow-500 to-orange-500 text-black px-3 py-1 rounded-full text-sm font-bold animate-bounce">
+                        20% OFF
+                      </div>
+                    </div>
+                    <div className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-2">
+                      {pricingMode === 'monthly' ? '$800' : '$4,000'}
+                    </div>
                   </div>
+                  
                   <p className="text-gray-300">
                     {pricingMode === 'monthly' ? 'Per Month × 6 Months' : 'One Time Payment'}
                   </p>
                   {pricingMode === 'monthly' && (
-                    <p className="text-blue-400 text-sm mt-2">Total: $6,000 (6-Month Program)</p>
+                    <div className="mt-2 space-y-1">
+                      <p className="text-gray-400 text-sm line-through">Regular Total: $6,000</p>
+                      <p className="text-yellow-400 text-sm font-bold">Early Bird Total: $4,800 (6-Month Program)</p>
+                    </div>
+                  )}
+                  {pricingMode === 'onetime' && (
+                    <p className="text-yellow-400 text-sm font-bold mt-2">Save $1,000 with Early Bird pricing!</p>
                   )}
                 </div>
 
