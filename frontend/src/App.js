@@ -673,7 +673,7 @@ const App = () => {
               </div>
               {/* Early Bird Banner */}
               <div className="absolute top-3 left-0 bg-gradient-to-r from-yellow-500 to-orange-500 text-white text-xs font-bold px-4 py-1 transform -rotate-3 shadow-lg">
-                20% OFF
+                {pricingMode === 'monthly' ? '$100 OFF' : '20% OFF'}
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-lg"></div>
               <CardContent className="p-8 relative z-10 pt-12">
